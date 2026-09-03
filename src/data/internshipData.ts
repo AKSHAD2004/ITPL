@@ -4,7 +4,7 @@ export const LOGO_URL = "/assets/logo.jpg";
 
 export const HERO_IMAGE_URL = "/assets/hero_banner.jpg";
 
-export const CONTACT_PHONE = "9309253549";
+export const CONTACT_PHONE = "9022508448";
 export const CONTACT_EMAIL = "contact@infoyashonand.com";
 export const COMPANY_WEBSITE = "www.infoyashonand.com";
 export const COMPANY_NAME = "Infoyashonand Technology Pvt. Ltd.";

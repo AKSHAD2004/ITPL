@@ -66,7 +66,7 @@ export const ApplyModal: React.FC<ApplyModalProps> = ({
         trackingNumber: trackingCode,
         fullName: fullName || 'Candidate',
         email: email || 'candidate@example.com',
-        phone: phone || '9309253549',
+        phone: phone || CONTACT_PHONE,
         trackId: selectedTrackId,
         trackTitle: trackObj.title,
         education,
@@ -555,7 +555,7 @@ export const ApplyModal: React.FC<ApplyModalProps> = ({
               {/* Fast Track WhatsApp & Call Buttons */}
               <div className="flex flex-col sm:flex-row items-center gap-3 justify-center">
                 <a
-                  href={`https://wa.me/919309253549?text=Hello%20Team%2C%20I%20have%20submitted%20my%20internship%20application%20(${completedSubmission.trackingNumber})%20for%20${completedSubmission.trackTitle}.`}
+                  href={`https://wa.me/91${CONTACT_PHONE}?text=Hello%20Team%2C%20I%20have%20submitted%20my%20internship%20application%20(${completedSubmission.trackingNumber})%20for%20${completedSubmission.trackTitle}.`}
                   target="_blank"
                   rel="noreferrer"
                   className="w-full sm:w-auto px-6 py-3 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-[13px] flex items-center justify-center gap-2 shadow-md"

@@ -45,13 +45,13 @@ export const ApplicationTrackerModal: React.FC<ApplicationTrackerModalProps> = (
         setFoundApplication(match);
       } else {
         // Provide an interactive sample match if not found locally so users can test immediately
-        if (query.includes('test') || query.includes('inf') || query.includes('9309253549')) {
+        if (query.includes('test') || query.includes('inf') || query.includes(CONTACT_PHONE)) {
           setFoundApplication({
             id: 'sample_1',
             trackingNumber: 'INF-2025-84920',
             fullName: 'Aarav Kulkarni',
             email: 'aarav.kulkarni@example.com',
-            phone: '9309253549',
+            phone: CONTACT_PHONE,
             trackId: 'data-analyst',
             trackTitle: 'Data Analyst',
             education: 'B.E. Computer Science',
@@ -210,7 +210,7 @@ export const ApplicationTrackerModal: React.FC<ApplicationTrackerModalProps> = (
               {/* Action Buttons */}
               <div className="pt-2 flex flex-col sm:flex-row items-center gap-3">
                 <a
-                  href={`https://wa.me/919309253549?text=Hello%20Team%2C%20checking%20status%20for%20tracking%20ID%20${foundApplication.trackingNumber}.`}
+                  href={`https://wa.me/91${CONTACT_PHONE}?text=Hello%20Team%2C%20checking%20status%20for%20tracking%20ID%20${foundApplication.trackingNumber}.`}
                   target="_blank"
                   rel="noreferrer"
                   className="w-full sm:w-auto flex-1 py-3 px-4 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-[13px] flex items-center justify-center gap-2"

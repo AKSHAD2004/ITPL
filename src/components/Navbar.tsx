@@ -47,7 +47,7 @@ export const Navbar: React.FC<NavbarProps> = ({
       <span className="text-white/30">•</span>
       <span className="flex items-center gap-2">
         <span className="text-amber-400">📞</span>
-        <strong className="text-amber-300">Admissions Hotline:</strong> Call +91 9309253549 for Instant Counseling.
+        <strong className="text-amber-300">Admissions Hotline:</strong> Call +91 {CONTACT_PHONE} for Instant Counseling.
       </span>
       <span className="text-white/30">•</span>
       <span className="flex items-center gap-2">

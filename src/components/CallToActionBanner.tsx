@@ -60,7 +60,7 @@ export const CallToActionBanner: React.FC = () => {
                 </a>
 
                 <a
-                  href={`https://wa.me/919309253549?text=Hello%2C%20I%20am%20interested%20in%20the%20Infoyashonand%20Technology%20Internship%20Program.`}
+                  href={`https://wa.me/91${CONTACT_PHONE}?text=Hello%2C%20I%20am%20interested%20in%20the%20Infoyashonand%20Technology%20Internship%20Program.`}
                   target="_blank"
                   rel="noreferrer"
                   className="w-full sm:w-auto bg-emerald-600 hover:bg-emerald-700 text-white font-heading font-bold text-[15px] sm:text-[16px] px-7 py-4 rounded-2xl shadow-md transition-all flex items-center justify-center gap-2.5"
