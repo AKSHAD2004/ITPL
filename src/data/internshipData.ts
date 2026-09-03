@@ -10,6 +10,13 @@ export const COMPANY_WEBSITE = "www.infoyashonand.com";
 export const COMPANY_NAME = "Infoyashonand Technology Pvt. Ltd.";
 export const TAGLINE = "INNOVATE • DEVELOP • GROW";
 
+export const getWhatsAppLink = (trackTitle?: string) => {
+  const message = trackTitle 
+    ? `Hello Infoyashonand Team, I am interested in applying for the ${trackTitle} Internship Track. Please share the details.`
+    : `Hello Infoyashonand Team, I am interested in applying for your Internship Programs. Please share the details.`;
+  return `https://wa.me/91${CONTACT_PHONE}?text=${encodeURIComponent(message)}`;
+};
+
 export const INTERNSHIP_TRACKS: InternshipTrack[] = [
   {
     id: 'data-analyst',

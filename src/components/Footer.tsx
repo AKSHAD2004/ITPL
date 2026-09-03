@@ -1,6 +1,6 @@
 import React from 'react';
-import { LOGO_URL, CONTACT_PHONE, COMPANY_WEBSITE, CONTACT_EMAIL, COMPANY_NAME, TAGLINE, INTERNSHIP_TRACKS } from '../data/internshipData';
-import { Phone, Mail, Globe, MapPin, ArrowUp, Heart, Sparkles, ExternalLink } from 'lucide-react';
+import { LOGO_URL, CONTACT_PHONE, COMPANY_WEBSITE, CONTACT_EMAIL, COMPANY_NAME, TAGLINE, INTERNSHIP_TRACKS, getWhatsAppLink } from '../data/internshipData';
+import { Phone, Mail, Globe, MapPin, ArrowUp, Heart, Sparkles, ExternalLink, MessageCircle } from 'lucide-react';
 
 interface FooterProps {
   onSelectTrackId: (id: string) => void;
@@ -143,12 +143,15 @@ export const Footer: React.FC<FooterProps> = ({
               <span>{CONTACT_EMAIL}</span>
             </div>
             <div className="pt-2">
-              <button
-                onClick={onOpenApply}
-                className="w-full py-2.5 px-4 bg-gradient-to-r from-yellow-400 to-amber-400 hover:from-yellow-300 hover:to-amber-300 text-[#00113a] font-extrabold rounded-xl text-[13px] shadow-md transition-all cursor-pointer"
+              <a
+                href={getWhatsAppLink()}
+                target="_blank"
+                rel="noreferrer"
+                className="w-full py-2.5 px-4 bg-gradient-to-r from-emerald-500 via-green-500 to-emerald-600 hover:from-emerald-600 hover:to-green-600 text-white font-extrabold rounded-xl text-[13px] shadow-md transition-all flex items-center justify-center gap-2 cursor-pointer"
               >
-                Enroll in Next Batch
-              </button>
+                <MessageCircle className="w-4 h-4 text-white" />
+                <span>WhatsApp Enquiry</span>
+              </a>
             </div>
           </div>
 

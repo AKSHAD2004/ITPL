@@ -1,6 +1,7 @@
 import React from 'react';
 import { InternshipTrack } from '../types';
-import { X, CheckCircle2, Clock, MapPin, DollarSign, Briefcase, Award, Sparkles, ArrowRight, Code2, BookOpen } from 'lucide-react';
+import { getWhatsAppLink } from '../data/internshipData';
+import { X, CheckCircle2, Clock, Briefcase, Award, Sparkles, Code2, BookOpen, MessageCircle } from 'lucide-react';
 
 interface TrackDetailModalProps {
   track: InternshipTrack | null;
@@ -173,16 +174,15 @@ export const TrackDetailModal: React.FC<TrackDetailModalProps> = ({
             >
               Close
             </button>
-            <button
-              onClick={() => {
-                onClose();
-                onApply(track.id);
-              }}
-              className="w-1/2 sm:w-auto bg-gradient-to-r from-yellow-400 to-amber-400 hover:from-yellow-300 hover:to-amber-300 text-[#00113a] text-[14px] font-extrabold px-7 py-2.5 rounded-full shadow-md hover:shadow-lg transition-all flex items-center justify-center gap-2 cursor-pointer"
+            <a
+              href={getWhatsAppLink(track.title)}
+              target="_blank"
+              rel="noreferrer"
+              className="w-1/2 sm:w-auto bg-gradient-to-r from-emerald-500 via-green-500 to-emerald-600 hover:from-emerald-600 hover:to-green-600 text-white text-[14px] font-extrabold px-7 py-2.5 rounded-full shadow-md hover:shadow-lg transition-all flex items-center justify-center gap-2 cursor-pointer"
             >
-              <span>Apply For This Track</span>
-              <ArrowRight className="w-4 h-4 text-[#00113a]" />
-            </button>
+              <MessageCircle className="w-4 h-4 text-white" />
+              <span>WhatsApp Inquiry</span>
+            </a>
           </div>
         </div>
 

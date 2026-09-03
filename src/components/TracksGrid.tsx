@@ -1,7 +1,7 @@
 import React, { useRef, useState } from 'react';
-import { INTERNSHIP_TRACKS } from '../data/internshipData';
+import { INTERNSHIP_TRACKS, getWhatsAppLink } from '../data/internshipData';
 import { InternshipTrack } from '../types';
-import { ChevronRight, ChevronLeft, Sparkles, Clock, MapPin, ArrowUpRight } from 'lucide-react';
+import { ChevronRight, ChevronLeft, Sparkles, Clock, MessageCircle } from 'lucide-react';
 
 interface TracksGridProps {
   onSelectTrack: (track: InternshipTrack) => void;
@@ -174,13 +174,15 @@ export const TracksGrid: React.FC<TracksGridProps> = ({
                   >
                     View Syllabus
                   </button>
-                  <button
-                    onClick={() => onApplyTrack(track.id)}
-                    className="flex-1 py-2.5 px-3 rounded-full text-[13px] font-extrabold text-[#00113a] bg-gradient-to-r from-yellow-400 to-amber-400 hover:from-yellow-300 hover:to-amber-300 shadow-md hover:shadow-lg transition-all text-center flex items-center justify-center gap-1 cursor-pointer"
+                  <a
+                    href={getWhatsAppLink(track.title)}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="flex-1 py-2.5 px-3 rounded-full text-[13px] font-extrabold text-white bg-gradient-to-r from-emerald-500 via-green-500 to-emerald-600 hover:from-emerald-600 hover:to-green-600 shadow-md hover:shadow-lg transition-all text-center flex items-center justify-center gap-1.5 cursor-pointer"
                   >
-                    <span>Apply Now</span>
-                    <ArrowUpRight className="w-3.5 h-3.5 text-[#00113a]" />
-                  </button>
+                    <MessageCircle className="w-4 h-4 text-white" />
+                    <span>WhatsApp Inquiry</span>
+                  </a>
                 </div>
 
               </div>

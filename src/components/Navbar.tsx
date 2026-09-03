@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { LOGO_URL, CONTACT_PHONE } from '../data/internshipData';
-import { Phone, Menu, X, ArrowUpRight, Search, FileCheck, Sparkles } from 'lucide-react';
+import { LOGO_URL, CONTACT_PHONE, getWhatsAppLink } from '../data/internshipData';
+import { Phone, Menu, X, ArrowUpRight, Sparkles, MessageCircle } from 'lucide-react';
 
 interface NavbarProps {
   activeTab: string;
@@ -123,14 +123,16 @@ export const Navbar: React.FC<NavbarProps> = ({
             <span>{CONTACT_PHONE}</span>
           </a>
 
-          {/* Apply Now Primary CTA */}
-          <button
-            onClick={() => onOpenApplyModal()}
-            className="bg-gradient-to-r from-yellow-400 to-amber-400 hover:from-yellow-300 hover:to-amber-300 text-[#00113a] font-extrabold text-[12px] sm:text-[14px] px-3.5 sm:px-6 py-2 sm:py-2.5 rounded-full shadow-[0_4px_14px_rgba(250,204,21,0.35)] hover:shadow-[0_6px_20px_rgba(250,204,21,0.45)] hover:scale-[1.02] active:scale-[0.98] transition-all flex items-center gap-1 sm:gap-1.5 whitespace-nowrap cursor-pointer"
+          {/* WhatsApp Primary CTA */}
+          <a
+            href={getWhatsAppLink()}
+            target="_blank"
+            rel="noreferrer"
+            className="bg-gradient-to-r from-emerald-500 via-green-500 to-emerald-600 hover:from-emerald-600 hover:to-green-600 text-white font-extrabold text-[12px] sm:text-[14px] px-3.5 sm:px-5 py-2 sm:py-2.5 rounded-full shadow-md hover:shadow-lg hover:scale-[1.02] active:scale-[0.98] transition-all flex items-center gap-1.5 whitespace-nowrap cursor-pointer"
           >
-            <Sparkles className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-[#00113a]" />
-            <span>Apply Now</span>
-          </button>
+            <MessageCircle className="w-4 h-4 text-white" />
+            <span>WhatsApp Enquiry</span>
+          </a>
 
           {/* Mobile Menu Toggle */}
           <button
@@ -164,16 +166,16 @@ export const Navbar: React.FC<NavbarProps> = ({
             ))}
 
             <div className="pt-3 mt-2 border-t border-slate-100 flex flex-col gap-2.5">
-              <button
-                onClick={() => {
-                  setMobileMenuOpen(false);
-                  onOpenApplyModal();
-                }}
-                className="flex items-center justify-center gap-2 w-full py-3.5 rounded-xl text-[14px] font-extrabold text-[#00113a] bg-gradient-to-r from-yellow-400 to-amber-400 hover:from-yellow-300 hover:to-amber-300 shadow-md cursor-pointer"
+              <a
+                href={getWhatsAppLink()}
+                target="_blank"
+                rel="noreferrer"
+                onClick={() => setMobileMenuOpen(false)}
+                className="flex items-center justify-center gap-2 w-full py-3.5 rounded-xl text-[14px] font-extrabold text-white bg-gradient-to-r from-emerald-500 to-green-600 shadow-md cursor-pointer"
               >
-                <Sparkles className="w-4 h-4 text-[#00113a]" />
-                <span>Apply Now</span>
-              </button>
+                <MessageCircle className="w-4.5 h-4.5 text-white" />
+                <span>WhatsApp Enquiry</span>
+              </a>
 
               <a
                 href={`tel:${CONTACT_PHONE}`}
