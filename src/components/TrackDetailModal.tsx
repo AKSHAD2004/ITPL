@@ -162,10 +162,7 @@ export const TrackDetailModal: React.FC<TrackDetailModalProps> = ({
         </div>
 
         {/* Modal Footer */}
-        <div className="p-4 sm:p-6 bg-slate-50 border-t border-slate-200 flex flex-col sm:flex-row items-center justify-between gap-3 shrink-0">
-          <div className="text-[13px] text-[#444650] text-center sm:text-left">
-            <span className="font-bold text-[#00113a]">Next Batch Starts:</span> Ongoing Rolling Admissions (Sangli / Hybrid)
-          </div>
+        <div className="p-4 sm:p-6 bg-slate-50 border-t border-slate-200 flex items-center justify-end gap-3 shrink-0">
 
           <div className="flex items-center gap-3 w-full sm:w-auto">
             <button
