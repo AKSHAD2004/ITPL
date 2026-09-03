@@ -1,6 +1,6 @@
 import { InternshipTrack, Testimonial, FAQItem } from '../types';
 
-export const LOGO_URL = "https://lh3.googleusercontent.com/aida-public/AB6AXuDvPTYOOHXkqwV6hg1hsCab1m0rJKj29yWhXzVkmF3idwEd5JN_9Xokmq27v7bGepDePCxw-czevI-rt7r720iUpHzv4y73RIXNcqbVwO8uxH_h-vTHhtyR6uUp9UVLAIhEFIruou6fh_ZgLU74CgLPL2LrrKuGQ-f3foP4hA3DKsaNmOuYoIwclxl78QBf-XfNoT5Jv4S_nFem3EExwUrgVmS1WodJw2PjFhgND6VEy_VGvFROWZUP";
+export const LOGO_URL = "/assets/logo.jpg";
 
 export const HERO_IMAGE_URL = "/assets/hero_banner.jpg";
 
