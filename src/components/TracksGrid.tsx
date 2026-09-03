@@ -159,16 +159,10 @@ export const TracksGrid: React.FC<TracksGridProps> = ({
                     </div>
                   </div>
 
-                  {/* Quick Metadata: Duration & Mode */}
-                  <div className="grid grid-cols-2 gap-2 mt-4 text-[12px] text-[#444650] font-medium">
-                    <div className="flex items-center gap-1.5">
-                      <Clock className="w-3.5 h-3.5 text-[#0059bb]" />
-                      <span>{track.duration}</span>
-                    </div>
-                    <div className="flex items-center gap-1.5">
-                      <MapPin className="w-3.5 h-3.5 text-emerald-600" />
-                      <span>{track.mode}</span>
-                    </div>
+                  {/* Quick Metadata: Duration */}
+                  <div className="flex items-center gap-1.5 mt-4 text-[12px] text-[#444650] font-medium">
+                    <Clock className="w-3.5 h-3.5 text-[#0059bb]" />
+                    <span>{track.duration}</span>
                   </div>
                 </div>
 
