@@ -13,7 +13,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
   onExploreRoles
 }) => {
   return (
-    <section className="relative w-full overflow-hidden bg-[#00113a] text-white pt-36 sm:pt-40 pb-24 sm:pb-32 lg:pb-36 min-h-[85vh] flex items-center">
+    <section className="relative w-full overflow-hidden bg-[#00113a] text-white pt-28 sm:pt-36 pb-16 sm:pb-24 min-h-[100dvh] flex items-center justify-center">
       
       {/* Full Background Image Layer - Responsive alignment for mobile & desktop */}
       <div 
@@ -40,8 +40,8 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
           {/* Tag Badge */}
           <div className="inline-flex items-center gap-2.5 px-4 sm:px-5 py-2 rounded-full bg-gradient-to-r from-amber-500/25 to-orange-500/25 border border-amber-400/50 text-amber-300 shadow-md backdrop-blur-md">
             <Sparkles className="w-4 h-4 text-amber-400 shrink-0 animate-spin" style={{ animationDuration: '6s' }} />
-            <span className="text-[12px] sm:text-[13px] font-bold tracking-[0.18em] uppercase font-heading">
-              Innovate • Develop • Grow
+            <span className="text-[11px] sm:text-[13px] font-bold tracking-[0.14em] uppercase font-heading">
+              Kickstart Your Career With Real-World Experience
             </span>
           </div>
 
@@ -81,21 +81,21 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
             </button>
           </div>
 
-          {/* Floating Highlights Strip */}
-          <div className="pt-6 flex flex-wrap items-center justify-center gap-3 border-t border-white/20 w-full max-w-2xl">
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-black/45 border border-white/20 backdrop-blur-md text-[13px] text-white shadow-md">
-              <Code2 className="w-4 h-4 text-amber-400" />
-              <span><strong>100%</strong> Practical Work</span>
+          {/* Floating Highlights Strip - Single line alignment on mobile */}
+          <div className="pt-4 flex flex-row items-center justify-center gap-1.5 sm:gap-3 border-t border-white/20 w-full max-w-2xl">
+            <div className="inline-flex items-center gap-1 sm:gap-2 px-2.5 sm:px-4 py-1 sm:py-2 rounded-lg sm:rounded-xl bg-black/50 border border-white/20 backdrop-blur-md text-[10px] sm:text-[13px] text-white shadow-md whitespace-nowrap shrink-0">
+              <Code2 className="w-3 h-3 sm:w-4 sm:h-4 text-amber-400 shrink-0" />
+              <span><strong>100%</strong> Practical</span>
             </div>
 
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-black/45 border border-white/20 backdrop-blur-md text-[13px] text-white shadow-md">
-              <Award className="w-4 h-4 text-emerald-400" />
-              <span><strong>98%</strong> Placement Rate</span>
+            <div className="inline-flex items-center gap-1 sm:gap-2 px-2.5 sm:px-4 py-1 sm:py-2 rounded-lg sm:rounded-xl bg-black/50 border border-white/20 backdrop-blur-md text-[10px] sm:text-[13px] text-white shadow-md whitespace-nowrap shrink-0">
+              <Award className="w-3 h-3 sm:w-4 sm:h-4 text-emerald-400 shrink-0" />
+              <span><strong>98%</strong> Placement</span>
             </div>
 
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-black/45 border border-white/20 backdrop-blur-md text-[13px] text-white shadow-md">
-              <Rocket className="w-4 h-4 text-amber-300" />
-              <span>Fast-Track Mentorship</span>
+            <div className="inline-flex items-center gap-1 sm:gap-2 px-2.5 sm:px-4 py-1 sm:py-2 rounded-lg sm:rounded-xl bg-black/50 border border-white/20 backdrop-blur-md text-[10px] sm:text-[13px] text-white shadow-md whitespace-nowrap shrink-0">
+              <Rocket className="w-3 h-3 sm:w-4 sm:h-4 text-amber-300 shrink-0" />
+              <span>Fast-Track</span>
             </div>
           </div>
 
