@@ -178,9 +178,9 @@ export const TrackDetailModal: React.FC<TrackDetailModalProps> = ({
               href={getWhatsAppLink(track.title)}
               target="_blank"
               rel="noreferrer"
-              className="w-1/2 sm:w-auto bg-gradient-to-r from-emerald-500 via-green-500 to-emerald-600 hover:from-emerald-600 hover:to-green-600 text-white text-[14px] font-extrabold px-7 py-2.5 rounded-full shadow-md hover:shadow-lg transition-all flex items-center justify-center gap-2 cursor-pointer"
+              className="w-1/2 sm:w-auto bg-gradient-to-r from-emerald-500 via-green-500 to-emerald-600 hover:from-emerald-600 hover:to-green-600 text-white text-[13px] sm:text-[14px] font-extrabold px-6 sm:px-7 py-2.5 rounded-full shadow-md hover:shadow-lg transition-all flex items-center justify-center gap-2 whitespace-nowrap cursor-pointer"
             >
-              <MessageCircle className="w-4 h-4 text-white" />
+              <MessageCircle className="w-4 h-4 text-white shrink-0" />
               <span>WhatsApp Inquiry</span>
             </a>
           </div>

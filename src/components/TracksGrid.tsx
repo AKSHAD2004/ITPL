@@ -178,9 +178,9 @@ export const TracksGrid: React.FC<TracksGridProps> = ({
                     href={getWhatsAppLink(track.title)}
                     target="_blank"
                     rel="noreferrer"
-                    className="flex-1 py-2.5 px-3 rounded-full text-[13px] font-extrabold text-white bg-gradient-to-r from-emerald-500 via-green-500 to-emerald-600 hover:from-emerald-600 hover:to-green-600 shadow-md hover:shadow-lg transition-all text-center flex items-center justify-center gap-1.5 cursor-pointer"
+                    className="flex-1 py-2.5 px-2 sm:px-3 rounded-full text-[11px] sm:text-[12px] font-extrabold text-white bg-gradient-to-r from-emerald-500 via-green-500 to-emerald-600 hover:from-emerald-600 hover:to-green-600 shadow-md hover:shadow-lg transition-all text-center flex items-center justify-center gap-1.5 whitespace-nowrap cursor-pointer"
                   >
-                    <MessageCircle className="w-4 h-4 text-white" />
+                    <MessageCircle className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-white shrink-0" />
                     <span>WhatsApp Inquiry</span>
                   </a>
                 </div>
