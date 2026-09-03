@@ -40,24 +40,24 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
           {/* Tag Badge */}
           <div className="inline-flex items-center gap-2.5 px-4 sm:px-5 py-2 rounded-full bg-gradient-to-r from-amber-500/25 to-orange-500/25 border border-amber-400/50 text-amber-300 shadow-md backdrop-blur-md">
             <Sparkles className="w-4 h-4 text-amber-400 shrink-0 animate-spin" style={{ animationDuration: '6s' }} />
-            <span className="text-[11px] sm:text-[13px] font-bold tracking-[0.14em] uppercase font-heading">
-              Kickstart Your Career With Real-World Experience
+            <span className="text-[12px] sm:text-[13px] font-bold tracking-[0.18em] uppercase font-heading">
+              Innovate • Develop • Grow
             </span>
           </div>
 
           {/* Main Headline */}
           <div className="space-y-1 sm:space-y-2">
-            <span className="block font-heading font-extrabold text-[36px] sm:text-[50px] md:text-[62px] lg:text-[70px] leading-[1.08] tracking-tight text-white uppercase drop-shadow-[0_4px_16px_rgba(0,0,0,0.95)]">
-              Internship
+            <span className="block font-heading font-extrabold text-[28px] sm:text-[44px] md:text-[54px] lg:text-[62px] leading-[1.1] tracking-tight text-white uppercase drop-shadow-[0_4px_16px_rgba(0,0,0,0.95)]">
+              Kickstart Your Career With
             </span>
-            <span className="block font-heading font-black text-[42px] sm:text-[58px] md:text-[72px] lg:text-[80px] leading-[1.05] tracking-tight uppercase bg-gradient-to-r from-yellow-300 via-amber-400 to-amber-500 text-transparent bg-clip-text drop-shadow-[0_4px_16px_rgba(0,0,0,0.95)]">
-              Opportunity
+            <span className="block font-heading font-black text-[32px] sm:text-[50px] md:text-[62px] lg:text-[70px] leading-[1.05] tracking-tight uppercase bg-gradient-to-r from-yellow-300 via-amber-400 to-amber-500 text-transparent bg-clip-text drop-shadow-[0_4px_16px_rgba(0,0,0,0.95)]">
+              Real-World Experience
             </span>
           </div>
 
           {/* Subtitle / Pitch */}
           <p className="font-body text-[16px] sm:text-[18px] md:text-[20px] leading-relaxed text-slate-100 max-w-2xl font-normal drop-shadow-[0_2px_10px_rgba(0,0,0,0.95)]">
-            Kickstart Your Career with Us! Gain real-world experience, work on live enterprise projects, build an industry-ready portfolio, and accelerate your tech trajectory with 1-on-1 mentorship.
+            Work on live enterprise projects, build an industry-ready portfolio, and accelerate your tech trajectory with 1-on-1 mentorship.
           </p>
 
           {/* Action Buttons */}
