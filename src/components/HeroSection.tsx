@@ -98,17 +98,6 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
             </div>
           </div>
 
-          {/* Placed Students Proof Row */}
-          <div className="flex items-center justify-center gap-3 text-[13px] sm:text-[14px] text-slate-200 font-medium pt-1">
-            <div className="flex -space-x-2">
-              <div className="w-8 h-8 rounded-full bg-gradient-to-tr from-blue-600 to-indigo-700 border-2 border-[#00113a] flex items-center justify-center text-[10px] font-extrabold text-white">AS</div>
-              <div className="w-8 h-8 rounded-full bg-gradient-to-tr from-amber-500 to-orange-600 border-2 border-[#00113a] flex items-center justify-center text-[10px] font-extrabold text-white">RJ</div>
-              <div className="w-8 h-8 rounded-full bg-gradient-to-tr from-cyan-500 to-blue-600 border-2 border-[#00113a] flex items-center justify-center text-[10px] font-extrabold text-white">NP</div>
-              <div className="w-8 h-8 rounded-full bg-[#0059bb] border-2 border-[#00113a] flex items-center justify-center text-[9px] font-bold text-white">+5k</div>
-            </div>
-            <span>Join <strong>5,000+</strong> students already placed & trained</span>
-          </div>
-
         </div>
       </div>
     </section>
