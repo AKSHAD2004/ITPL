@@ -1,6 +1,7 @@
 import React from 'react';
-import { Home, Briefcase, Phone, MessageCircle } from 'lucide-react';
+import { Home, Briefcase, Phone } from 'lucide-react';
 import { CONTACT_PHONE, getWhatsAppLink } from '../data/internshipData';
+import { WhatsappIcon } from './WhatsappIcon';
 
 interface MobileBottomNavProps {
   activeTab: string;
@@ -56,7 +57,7 @@ export const MobileBottomNav: React.FC<MobileBottomNavProps> = ({
           className="flex flex-col items-center -mt-5 cursor-pointer"
         >
           <div className="w-12 h-12 rounded-full bg-gradient-to-tr from-emerald-500 to-green-600 text-white flex items-center justify-center shadow-[0_4px_12px_rgba(37,211,102,0.5)] border-2 border-white">
-            <MessageCircle className="w-6 h-6 text-white" />
+            <WhatsappIcon className="w-6 h-6 text-white" />
           </div>
           <span className="text-[10px] font-extrabold text-emerald-700 mt-0.5">WhatsApp</span>
         </a>

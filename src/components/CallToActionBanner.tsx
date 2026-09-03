@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { CONTACT_PHONE, COMPANY_WEBSITE, CONTACT_EMAIL, INTERNSHIP_TRACKS } from '../data/internshipData';
-import { Phone, PhoneCall, Globe, Mail, MessageSquare, Sparkles, Send, CheckCircle2 } from 'lucide-react';
+import { Phone, PhoneCall, Globe, Mail, Sparkles, Send, CheckCircle2 } from 'lucide-react';
+import { WhatsappIcon } from './WhatsappIcon';
 
 export const CallToActionBanner: React.FC = () => {
   const [callbackName, setCallbackName] = useState('');
@@ -64,7 +65,7 @@ export const CallToActionBanner: React.FC = () => {
                   rel="noreferrer"
                   className="w-full sm:w-auto bg-emerald-600 hover:bg-emerald-700 text-white font-heading font-bold text-[15px] sm:text-[16px] px-7 py-4 rounded-2xl shadow-md transition-all flex items-center justify-center gap-2.5"
                 >
-                  <MessageSquare className="w-5 h-5 text-emerald-200" />
+                  <WhatsappIcon className="w-5 h-5 text-white" />
                   <span>Chat on WhatsApp</span>
                 </a>
               </div>

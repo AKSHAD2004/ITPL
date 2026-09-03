@@ -3,8 +3,9 @@ import { INTERNSHIP_TRACKS, CONTACT_PHONE } from '../data/internshipData';
 import { ApplicationSubmission } from '../types';
 import { 
   X, CheckCircle2, ArrowRight, ArrowLeft, Upload, FileText, Sparkles, 
-  Send, Copy, Check, MessageSquare, PhoneCall, Calendar, User, Mail, GraduationCap, MapPin, Briefcase 
+  Send, Copy, Check, PhoneCall, Calendar, User, Mail, GraduationCap, MapPin, Briefcase 
 } from 'lucide-react';
+import { WhatsappIcon } from './WhatsappIcon';
 
 interface ApplyModalProps {
   isOpen: boolean;
@@ -559,7 +560,7 @@ export const ApplyModal: React.FC<ApplyModalProps> = ({
                   rel="noreferrer"
                   className="w-full sm:w-auto px-6 py-3 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-[13px] flex items-center justify-center gap-2 shadow-md"
                 >
-                  <MessageSquare className="w-4 h-4" />
+                  <WhatsappIcon className="w-4 h-4" />
                   <span>Fast-Track via WhatsApp</span>
                 </a>
 

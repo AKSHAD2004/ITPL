@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { LOGO_URL, CONTACT_PHONE, getWhatsAppLink } from '../data/internshipData';
-import { Phone, Menu, X, ArrowUpRight, Sparkles, MessageCircle } from 'lucide-react';
+import { Phone, Menu, X, ArrowUpRight, Sparkles } from 'lucide-react';
+import { WhatsappIcon } from './WhatsappIcon';
 
 interface NavbarProps {
   activeTab: string;
@@ -130,7 +131,7 @@ export const Navbar: React.FC<NavbarProps> = ({
             rel="noreferrer"
             className="bg-gradient-to-r from-emerald-500 via-green-500 to-emerald-600 hover:from-emerald-600 hover:to-green-600 text-white font-extrabold text-[12px] sm:text-[14px] px-3 sm:px-5 py-2 sm:py-2.5 rounded-full shadow-md hover:shadow-lg hover:scale-[1.02] active:scale-[0.98] transition-all flex items-center gap-1.5 whitespace-nowrap cursor-pointer shrink-0"
           >
-            <MessageCircle className="w-4 h-4 text-white shrink-0" />
+            <WhatsappIcon className="w-4 h-4 text-white shrink-0" />
             <span className="hidden sm:inline">WhatsApp Enquiry</span>
             <span className="inline sm:hidden">WhatsApp</span>
           </a>
@@ -174,7 +175,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                 onClick={() => setMobileMenuOpen(false)}
                 className="flex items-center justify-center gap-2 w-full py-3.5 rounded-xl text-[14px] font-extrabold text-white bg-gradient-to-r from-emerald-500 to-green-600 shadow-md cursor-pointer"
               >
-                <MessageCircle className="w-4.5 h-4.5 text-white" />
+                <WhatsappIcon className="w-4.5 h-4.5 text-white" />
                 <span>WhatsApp Enquiry</span>
               </a>
 

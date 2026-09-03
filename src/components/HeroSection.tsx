@@ -1,6 +1,7 @@
 import React from 'react';
 import { HERO_IMAGE_URL, getWhatsAppLink } from '../data/internshipData';
-import { ArrowRight, Sparkles, Rocket, Laptop, Award, Code2, MessageCircle } from 'lucide-react';
+import { ArrowRight, Sparkles, Rocket, Laptop, Award, Code2 } from 'lucide-react';
+import { WhatsappIcon } from './WhatsappIcon';
 
 interface HeroSectionProps {
   onOpenApplyModal: () => void;
@@ -67,7 +68,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
               rel="noreferrer"
               className="w-full sm:w-auto bg-gradient-to-r from-emerald-500 via-green-500 to-emerald-600 hover:from-emerald-600 hover:to-green-600 text-white font-heading font-extrabold text-[15px] sm:text-[16px] px-8 sm:px-10 py-4 rounded-full shadow-[0_10px_25px_rgba(37,211,102,0.4)] hover:shadow-[0_14px_30px_rgba(37,211,102,0.55)] hover:scale-[1.03] active:scale-[0.98] transition-all flex items-center justify-center gap-3 group cursor-pointer"
             >
-              <MessageCircle className="w-5 h-5 text-white" />
+              <WhatsappIcon className="w-5 h-5 text-white" />
               <span>WhatsApp Enquiry</span>
             </a>
 

@@ -3,8 +3,9 @@ import { ApplicationSubmission } from '../types';
 import { INTERNSHIP_TRACKS, CONTACT_PHONE } from '../data/internshipData';
 import { 
   X, Search, FileCheck, CheckCircle2, Clock, Calendar, UserCheck, 
-  Download, ArrowRight, ShieldCheck, PhoneCall, MessageSquare, AlertCircle 
+  Download, ArrowRight, ShieldCheck, PhoneCall, AlertCircle 
 } from 'lucide-react';
+import { WhatsappIcon } from './WhatsappIcon';
 
 interface ApplicationTrackerModalProps {
   isOpen: boolean;
@@ -214,7 +215,7 @@ export const ApplicationTrackerModal: React.FC<ApplicationTrackerModalProps> = (
                   rel="noreferrer"
                   className="w-full sm:w-auto flex-1 py-3 px-4 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-[13px] flex items-center justify-center gap-2"
                 >
-                  <MessageSquare className="w-4 h-4" />
+                  <WhatsappIcon className="w-4 h-4" />
                   <span>WhatsApp Inquiries</span>
                 </a>
 

@@ -1,7 +1,8 @@
 import React from 'react';
 import { InternshipTrack } from '../types';
 import { getWhatsAppLink } from '../data/internshipData';
-import { X, CheckCircle2, Clock, Briefcase, Award, Sparkles, Code2, BookOpen, MessageCircle } from 'lucide-react';
+import { X, CheckCircle2, Clock, Briefcase, Award, Sparkles, Code2, BookOpen } from 'lucide-react';
+import { WhatsappIcon } from './WhatsappIcon';
 
 interface TrackDetailModalProps {
   track: InternshipTrack | null;
@@ -177,7 +178,7 @@ export const TrackDetailModal: React.FC<TrackDetailModalProps> = ({
               rel="noreferrer"
               className="w-1/2 sm:w-auto bg-gradient-to-r from-emerald-500 via-green-500 to-emerald-600 hover:from-emerald-600 hover:to-green-600 text-white text-[13px] sm:text-[14px] font-extrabold px-6 sm:px-7 py-2.5 rounded-full shadow-md hover:shadow-lg transition-all flex items-center justify-center gap-2 whitespace-nowrap cursor-pointer"
             >
-              <MessageCircle className="w-4 h-4 text-white shrink-0" />
+              <WhatsappIcon className="w-4 h-4 text-white shrink-0" />
               <span>WhatsApp Inquiry</span>
             </a>
           </div>
