@@ -117,9 +117,6 @@ export const TracksGrid: React.FC<TracksGridProps> = ({
                           Popular
                         </span>
                       )}
-                      <span className="text-[11px] font-semibold text-emerald-700 bg-emerald-50 px-2.5 py-0.5 rounded-full border border-emerald-100">
-                        {track.vacancies} Seats Left
-                      </span>
                     </div>
                   </div>
 

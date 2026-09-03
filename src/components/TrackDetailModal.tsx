@@ -43,9 +43,6 @@ export const TrackDetailModal: React.FC<TrackDetailModalProps> = ({
                 <span className="px-3 py-0.5 rounded-full text-[11px] font-bold uppercase tracking-wider bg-amber-100 text-[#d07c00] border border-amber-200">
                   Official Track
                 </span>
-                <span className="px-2.5 py-0.5 rounded-full text-[11px] font-semibold bg-emerald-50 text-emerald-700 border border-emerald-200">
-                  {track.vacancies} Openings Available
-                </span>
               </div>
               <h2 className="font-heading font-extrabold text-[24px] sm:text-[28px] text-[#00113a] leading-tight">
                 {track.title}

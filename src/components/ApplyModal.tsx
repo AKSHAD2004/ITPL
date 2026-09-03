@@ -187,7 +187,7 @@ export const ApplyModal: React.FC<ApplyModalProps> = ({
                             {track.title}
                           </div>
                           <div className="text-[11px] text-[#444650] truncate">
-                            {track.duration} • {track.vacancies} seats
+                            {track.duration}
                           </div>
                         </div>
                         {isSelected && <CheckCircle2 className="w-5 h-5 text-[#0059bb] shrink-0" />}
