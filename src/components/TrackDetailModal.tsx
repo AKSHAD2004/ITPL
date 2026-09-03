@@ -18,75 +18,75 @@ export const TrackDetailModal: React.FC<TrackDetailModalProps> = ({
   if (!track) return null;
 
   return (
-    <div className="fixed inset-0 z-50 overflow-y-auto bg-[#00113a]/70 backdrop-blur-sm flex items-center justify-center p-3 sm:p-6 animate-in fade-in duration-200">
+    <div className="fixed inset-0 z-50 overflow-y-auto bg-[#00113a]/80 backdrop-blur-md flex items-center justify-center p-3 sm:p-6 animate-in fade-in duration-200">
       <div 
-        className="relative bg-white w-full max-w-3xl rounded-3xl shadow-2xl border border-slate-100 overflow-hidden max-h-[92vh] flex flex-col my-auto animate-in zoom-in-95 duration-200"
+        className="relative bg-gradient-to-br from-[#00113a] via-[#001f5c] to-[#00113a] text-white w-full max-w-3xl rounded-3xl shadow-2xl border border-white/20 overflow-hidden max-h-[92vh] flex flex-col my-auto animate-in zoom-in-95 duration-200"
         onClick={(e) => e.stopPropagation()}
       >
         {/* Modal Header */}
-        <div className="relative bg-gradient-to-r from-blue-50/90 via-slate-50 to-amber-50/70 text-[#00113a] p-6 sm:p-8 shrink-0 border-b border-slate-200/80">
+        <div className="relative bg-white/10 text-white p-6 sm:p-8 shrink-0 border-b border-white/15 backdrop-blur-md">
           <button
             onClick={onClose}
-            className="absolute top-5 right-5 w-9 h-9 rounded-full bg-slate-200/70 hover:bg-slate-300 text-[#00113a] flex items-center justify-center transition-colors cursor-pointer"
+            className="absolute top-5 right-5 w-9 h-9 rounded-full bg-white/15 hover:bg-white/25 text-white flex items-center justify-center transition-colors cursor-pointer border border-white/20"
             aria-label="Close"
           >
             <X className="w-5 h-5" />
           </button>
 
           <div className="flex items-center gap-4">
-            <div className="w-16 h-16 sm:w-18 sm:h-18 rounded-2xl bg-[#00113a] text-white flex items-center justify-center shadow-md shrink-0">
-              <span className="material-symbols-outlined text-[36px] text-[#b3c5ff]">
+            <div className="w-16 h-16 sm:w-18 sm:h-18 rounded-2xl bg-white/10 text-amber-300 border border-white/20 flex items-center justify-center shadow-md shrink-0">
+              <span className="material-symbols-outlined text-[36px]">
                 {track.icon}
               </span>
             </div>
 
             <div>
               <div className="flex flex-wrap items-center gap-2 mb-1.5">
-                <span className="px-3 py-0.5 rounded-full text-[11px] font-bold uppercase tracking-wider bg-amber-100 text-[#d07c00] border border-amber-200">
+                <span className="px-3 py-0.5 rounded-full text-[11px] font-bold uppercase tracking-wider bg-gradient-to-r from-amber-400 to-yellow-400 text-[#00113a] font-heading shadow-xs">
                   Official Track
                 </span>
               </div>
-              <h2 className="font-heading font-extrabold text-[24px] sm:text-[28px] text-[#00113a] leading-tight">
+              <h2 className="font-heading font-extrabold text-[24px] sm:text-[28px] text-white leading-tight">
                 {track.title}
               </h2>
-              <p className="text-[13px] sm:text-[14px] text-[#0059bb] font-semibold">
+              <p className="text-[13px] sm:text-[14px] text-amber-300 font-semibold">
                 {track.tagline}
               </p>
             </div>
           </div>
 
           {/* Quick Metrics Strip */}
-          <div className="flex items-center gap-2 mt-6 pt-4 border-t border-slate-200/80 text-[13px] text-[#444650] font-medium">
-            <Clock className="w-4 h-4 text-[#0059bb] shrink-0" />
+          <div className="flex items-center gap-2 mt-6 pt-4 border-t border-white/15 text-[13px] text-slate-200 font-medium">
+            <Clock className="w-4 h-4 text-amber-400 shrink-0" />
             <span>{track.duration}</span>
           </div>
         </div>
 
         {/* Modal Scrollable Body */}
-        <div className="p-6 sm:p-8 overflow-y-auto space-y-6 flex-1 text-[#191c1d]">
+        <div className="p-6 sm:p-8 overflow-y-auto space-y-6 flex-1 text-slate-100">
           
           {/* Track Overview */}
           <div>
-            <h3 className="font-heading font-bold text-[17px] text-[#00113a] mb-2 flex items-center gap-2">
-              <BookOpen className="w-4 h-4 text-[#0059bb]" />
+            <h3 className="font-heading font-bold text-[17px] text-amber-300 mb-2 flex items-center gap-2">
+              <BookOpen className="w-4 h-4 text-amber-400" />
               <span>Track Overview</span>
             </h3>
-            <p className="text-[14px] sm:text-[15px] text-[#444650] leading-relaxed">
+            <p className="text-[14px] sm:text-[15px] text-slate-200/90 leading-relaxed font-light">
               {track.description}
             </p>
           </div>
 
           {/* Core Skills & Tools */}
           <div>
-            <h3 className="font-heading font-bold text-[17px] text-[#00113a] mb-2.5 flex items-center gap-2">
-              <Code2 className="w-4 h-4 text-[#0059bb]" />
+            <h3 className="font-heading font-bold text-[17px] text-amber-300 mb-2.5 flex items-center gap-2">
+              <Code2 className="w-4 h-4 text-amber-400" />
               <span>Technologies & Tools Stack</span>
             </h3>
             <div className="flex flex-wrap gap-2">
               {track.skills.map((skill, idx) => (
                 <span
                   key={idx}
-                  className="px-3 py-1 rounded-xl text-[13px] font-semibold bg-blue-50 text-[#0059bb] border border-blue-100"
+                  className="px-3 py-1 rounded-xl text-[13px] font-semibold bg-white/15 text-white border border-white/20"
                 >
                   {skill}
                 </span>
@@ -94,7 +94,7 @@ export const TrackDetailModal: React.FC<TrackDetailModalProps> = ({
               {track.tools.map((tool, idx) => (
                 <span
                   key={`t-${idx}`}
-                  className="px-3 py-1 rounded-xl text-[13px] font-medium bg-slate-100 text-[#191c1d] border border-slate-200"
+                  className="px-3 py-1 rounded-xl text-[13px] font-medium bg-amber-400/20 text-amber-300 border border-amber-400/30"
                 >
                   {tool}
                 </span>
@@ -103,24 +103,24 @@ export const TrackDetailModal: React.FC<TrackDetailModalProps> = ({
           </div>
 
           {/* Capstone Project Showcase */}
-          <div className="bg-[#f8f9fa] rounded-2xl p-5 sm:p-6 border border-slate-200/80">
-            <div className="flex items-center gap-2 text-amber-600 font-heading font-bold text-[12px] uppercase tracking-wider mb-2">
+          <div className="bg-white/10 rounded-2xl p-5 sm:p-6 border border-white/15 backdrop-blur-md">
+            <div className="flex items-center gap-2 text-amber-400 font-heading font-bold text-[12px] uppercase tracking-wider mb-2">
               <Award className="w-4 h-4" />
               <span>Featured Capstone Project</span>
             </div>
-            <h4 className="font-heading font-bold text-[17px] text-[#00113a] mb-2">
+            <h4 className="font-heading font-bold text-[17px] text-white mb-2">
               {track.capstoneProject.title}
             </h4>
-            <p className="text-[14px] text-[#444650] mb-4 leading-relaxed">
+            <p className="text-[14px] text-slate-200/90 mb-4 leading-relaxed font-light">
               {track.capstoneProject.description}
             </p>
             <div className="space-y-1.5">
-              <span className="text-[12px] font-bold text-[#00113a] uppercase tracking-wider block">
+              <span className="text-[12px] font-bold text-amber-300 uppercase tracking-wider block">
                 Deliverables for Your Resume:
               </span>
               {track.capstoneProject.deliverables.map((item, dIdx) => (
-                <div key={dIdx} className="flex items-start gap-2 text-[13px] text-[#444650]">
-                  <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
+                <div key={dIdx} className="flex items-start gap-2 text-[13px] text-slate-200">
+                  <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0 mt-0.5" />
                   <span>{item}</span>
                 </div>
               ))}
@@ -129,13 +129,13 @@ export const TrackDetailModal: React.FC<TrackDetailModalProps> = ({
 
           {/* Prerequisites & Eligibility */}
           <div>
-            <h3 className="font-heading font-bold text-[16px] text-[#00113a] mb-2.5">
+            <h3 className="font-heading font-bold text-[16px] text-amber-300 mb-2.5">
               Prerequisites & Eligibility
             </h3>
             <ul className="space-y-2">
               {track.prerequisites.map((req, rIdx) => (
-                <li key={rIdx} className="flex items-start gap-2 text-[13px] sm:text-[14px] text-[#444650]">
-                  <span className="w-1.5 h-1.5 rounded-full bg-[#0059bb] shrink-0 mt-2" />
+                <li key={rIdx} className="flex items-start gap-2 text-[13px] sm:text-[14px] text-slate-200/90">
+                  <span className="w-1.5 h-1.5 rounded-full bg-amber-400 shrink-0 mt-2" />
                   <span>{req}</span>
                 </li>
               ))}
@@ -144,15 +144,15 @@ export const TrackDetailModal: React.FC<TrackDetailModalProps> = ({
 
           {/* Career Outcomes */}
           <div>
-            <h3 className="font-heading font-bold text-[16px] text-[#00113a] mb-2.5 flex items-center gap-2">
-              <Briefcase className="w-4 h-4 text-[#0059bb]" />
+            <h3 className="font-heading font-bold text-[16px] text-amber-300 mb-2.5 flex items-center gap-2">
+              <Briefcase className="w-4 h-4 text-amber-400" />
               <span>Target Career Roles</span>
             </h3>
             <div className="flex flex-wrap gap-2">
               {track.careerRoles.map((role, rIdx) => (
                 <span
                   key={rIdx}
-                  className="px-3 py-1 rounded-full text-[12px] font-semibold bg-emerald-50 text-emerald-800 border border-emerald-200"
+                  className="px-3 py-1 rounded-full text-[12px] font-semibold bg-emerald-500/20 text-emerald-300 border border-emerald-500/40"
                 >
                   ✓ {role}
                 </span>
@@ -163,12 +163,12 @@ export const TrackDetailModal: React.FC<TrackDetailModalProps> = ({
         </div>
 
         {/* Modal Footer */}
-        <div className="p-4 sm:p-6 bg-slate-50 border-t border-slate-200 flex items-center justify-end gap-3 shrink-0">
+        <div className="p-4 sm:p-6 bg-white/10 border-t border-white/15 backdrop-blur-md flex items-center justify-end gap-3 shrink-0">
 
           <div className="flex items-center gap-3 w-full sm:w-auto">
             <button
               onClick={onClose}
-              className="w-1/2 sm:w-auto px-5 py-2.5 rounded-full text-[13px] font-bold text-[#444650] hover:bg-slate-200 transition-colors"
+              className="w-1/2 sm:w-auto px-5 py-2.5 rounded-full text-[13px] font-bold text-white bg-white/10 hover:bg-white/20 border border-white/20 transition-colors"
             >
               Close
             </button>
