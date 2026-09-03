@@ -27,11 +27,11 @@ export const Footer: React.FC<FooterProps> = ({
           {/* Col 1: Brand & Bio */}
           <div className="lg:col-span-4 space-y-4">
             <div className="flex items-center gap-3">
-              <div className="w-11 h-11 rounded-full bg-white/10 p-1 flex items-center justify-center border border-white/20">
+              <div className="w-11 h-11 rounded-full bg-white p-0.5 flex items-center justify-center border border-white/30 shadow-md overflow-hidden shrink-0">
                 <img 
                   src={LOGO_URL} 
                   alt="Infoyashonand Logo" 
-                  className="w-full h-full object-contain filter brightness-110"
+                  className="w-full h-full object-cover rounded-full"
                 />
               </div>
               <div>

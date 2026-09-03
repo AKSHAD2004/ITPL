@@ -75,11 +75,11 @@ export const Navbar: React.FC<NavbarProps> = ({
           onClick={() => handleNavClick('home')}
           className="flex items-center gap-2.5 sm:gap-3 cursor-pointer group min-w-0 shrink"
         >
-          <div className="relative w-9 h-9 sm:w-11 sm:h-11 rounded-full bg-[#00113a] p-1 flex items-center justify-center shadow-md group-hover:scale-105 transition-transform shrink-0">
+          <div className="relative w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-white border border-slate-200/80 p-0.5 flex items-center justify-center shadow-md group-hover:scale-105 transition-transform shrink-0 overflow-hidden">
             <img 
               src={LOGO_URL} 
               alt="Infoyashonand Technology Logo" 
-              className="w-full h-full object-contain filter brightness-110"
+              className="w-full h-full object-cover rounded-full"
             />
           </div>
           <div className="flex flex-col min-w-0">
