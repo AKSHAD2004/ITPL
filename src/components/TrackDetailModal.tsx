@@ -54,15 +54,9 @@ export const TrackDetailModal: React.FC<TrackDetailModalProps> = ({
           </div>
 
           {/* Quick Metrics Strip */}
-          <div className="grid grid-cols-2 gap-3 mt-6 pt-4 border-t border-slate-200/80 text-[13px]">
-            <div className="flex items-center gap-2 text-[#444650] font-medium">
-              <Clock className="w-4 h-4 text-[#0059bb] shrink-0" />
-              <span>{track.duration}</span>
-            </div>
-            <div className="flex items-center gap-2 text-[#00113a] font-bold">
-              <DollarSign className="w-4 h-4 text-amber-600 shrink-0" />
-              <span>{track.stipend}</span>
-            </div>
+          <div className="flex items-center gap-2 mt-6 pt-4 border-t border-slate-200/80 text-[13px] text-[#444650] font-medium">
+            <Clock className="w-4 h-4 text-[#0059bb] shrink-0" />
+            <span>{track.duration}</span>
           </div>
         </div>
 
