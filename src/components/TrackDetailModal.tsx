@@ -46,7 +46,7 @@ export const TrackDetailModal: React.FC<TrackDetailModalProps> = ({
                   Official Track
                 </span>
               </div>
-              <h2 className="font-heading font-extrabold text-[24px] sm:text-[28px] text-white leading-tight">
+              <h2 className="font-heading font-extrabold text-[24px] sm:text-[28px] text-white leading-tight uppercase tracking-tight">
                 {track.title}
               </h2>
               <p className="text-[13px] sm:text-[14px] text-amber-300 font-semibold">

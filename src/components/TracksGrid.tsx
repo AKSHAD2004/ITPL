@@ -112,7 +112,7 @@ const InteractiveTrackCard: React.FC<InteractiveTrackCardProps> = ({
           </div>
 
           {/* Title & Tagline */}
-          <h3 className="font-heading font-extrabold text-[22px] sm:text-[24px] text-white group-hover:text-amber-300 transition-colors leading-tight mb-1">
+          <h3 className="font-heading font-extrabold text-[22px] sm:text-[24px] text-white group-hover:text-amber-300 transition-colors leading-tight mb-1 uppercase tracking-tight">
             {track.title}
           </h3>
           <p className="text-[13px] font-bold text-amber-400 mb-3">{track.tagline}</p>

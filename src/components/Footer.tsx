@@ -17,7 +17,7 @@ export const Footer: React.FC<FooterProps> = ({
   };
 
   return (
-    <footer className="bg-[#00113a] text-white pt-16 pb-28 lg:pb-16 border-t border-white/10 relative overflow-hidden">
+    <footer className="bg-[#282E83] text-white pt-16 pb-28 lg:pb-16 border-t border-white/10 relative overflow-hidden">
       {/* Glow Orbs */}
       <div className="absolute top-0 right-0 w-96 h-96 bg-[#0059bb]/20 rounded-full blur-[100px] pointer-events-none" />
       <div className="absolute bottom-0 left-0 w-96 h-96 bg-[#d07c00]/15 rounded-full blur-[100px] pointer-events-none" />

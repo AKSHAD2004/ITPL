@@ -63,7 +63,7 @@ export const Navbar: React.FC<NavbarProps> = ({
       </div>
 
       {/* Main Navbar */}
-      <div className="bg-[#00113a] backdrop-blur-xl border-b border-white/10 shadow-[0_4px_25px_rgba(0,17,58,0.5)]">
+      <div className="bg-[#282E83] border-b border-white/10 shadow-[0_4px_25px_rgba(0,17,58,0.5)]">
         <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between gap-4">
         {/* Brand Logo & Name matching official banner */}
         <div 
