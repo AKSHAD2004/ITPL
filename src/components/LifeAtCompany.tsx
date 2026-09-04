@@ -1,4 +1,5 @@
 import React from 'react';
+import { LOGO_URL } from '../data/internshipData';
 import { GraduationCap, TrendingUp, HeartHandshake, CheckCircle2, Terminal, Code2, Users2, Sparkles } from 'lucide-react';
 
 export const LifeAtCompany: React.FC = () => {
@@ -33,8 +34,18 @@ export const LifeAtCompany: React.FC = () => {
             <Sparkles className="w-3.5 h-3.5" />
             <span>Culture & Environment</span>
           </div>
-          <h2 className="font-heading font-extrabold text-[28px] sm:text-[36px] text-[#00113a] tracking-tight">
-            Life at INFOYASHONAND
+          <h2 className="font-heading font-extrabold text-[28px] sm:text-[38px] text-[#00113a] tracking-tight flex flex-col items-center justify-center gap-2">
+            <span>Life at</span>
+            <span className="inline-flex items-center gap-2.5 px-5 py-1.5 rounded-xl bg-gradient-to-r from-[#00113a] via-[#002366] to-[#00113a] text-white shadow-md tracking-wider">
+              <span className="relative w-7 h-7 sm:w-8 sm:h-8 rounded-full bg-white border border-white/30 p-0.5 inline-flex items-center justify-center shadow-sm overflow-hidden shrink-0">
+                <img 
+                  src={LOGO_URL} 
+                  alt="Infoyashonand Logo" 
+                  className="w-full h-full object-cover rounded-full"
+                />
+              </span>
+              <span>INFOYASHONAND</span>
+            </span>
           </h2>
           <p className="text-[15px] sm:text-[17px] text-[#444650] mt-3 max-w-2xl mx-auto">
             We don't believe in boring busywork. We nurture aspiring software developers, data practitioners, and marketers into confident industry leaders.
