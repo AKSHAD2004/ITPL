@@ -130,7 +130,7 @@ export const ApplyModal: React.FC<ApplyModalProps> = ({
 
           <div className="flex items-center gap-2 text-[#0059bb] text-[12px] font-bold uppercase tracking-widest font-heading mb-1">
             <Sparkles className="w-4 h-4 text-amber-500" />
-            <span>Infoyashonand Internship Portal</span>
+            <span>INFOYASHONAND Internship Portal</span>
           </div>
 
           <h2 className="font-heading font-extrabold text-[22px] sm:text-[26px] text-[#00113a] leading-tight">
@@ -507,7 +507,7 @@ export const ApplyModal: React.FC<ApplyModalProps> = ({
                   Submission Successful
                 </span>
                 <h3 className="font-heading font-extrabold text-[24px] sm:text-[28px] text-[#00113a]">
-                  Welcome to Infoyashonand!
+                  Welcome to INFOYASHONAND!
                 </h3>
                 <p className="text-[14px] text-[#444650] mt-1 max-w-md mx-auto">
                   Your application for <strong>{completedSubmission.trackTitle}</strong> has been received and routed to our technical evaluation panel.

@@ -4,7 +4,7 @@ export const LOGO_URL = "/assets/logo.jpg";
 
 export const HERO_IMAGE_URL = "/assets/hero_banner.jpg";
 
-export const CONTACT_PHONE = "9022508448";
+export const CONTACT_PHONE = "7249621109";
 export const CONTACT_EMAIL = "contact@infoyashonand.com";
 export const COMPANY_WEBSITE = "www.infoyashonand.com";
 export const COMPANY_NAME = "INFOYASHONAND TECHNOLOGY PVT. LTD.";
@@ -26,7 +26,7 @@ export const INTERNSHIP_TRACKS: InternshipTrack[] = [
     tagline: 'Analyze & visualize insights',
     description: 'Master data visualization, statistical exploration, SQL transformations, and interactive dashboarding to turn raw numbers into actionable business insights.',
     icon: 'analytics',
-    badgeColor: 'from-blue-600 to-indigo-700',
+    badgeColor: 'from-[#cc0000] to-[#00113a]',
     popular: true,
     skills: ['SQL', 'Python', 'Tableau', 'PowerBI', 'Excel Advanced', 'Statistical Analysis', 'ETL Pipelines', 'Data Storytelling'],
     duration: '3 to 6 Months',
@@ -50,7 +50,7 @@ export const INTERNSHIP_TRACKS: InternshipTrack[] = [
     tagline: 'Machine learning & predictive models',
     description: 'Dive deep into machine learning algorithms, statistical modeling, neural networks, Natural Language Processing, and generative AI systems using real enterprise datasets.',
     icon: 'neurology',
-    badgeColor: 'from-indigo-600 to-violet-800',
+    badgeColor: 'from-[#00113a] to-[#cc0000]',
     popular: true,
     skills: ['Machine Learning', 'Deep Learning', 'NLP', 'Predictive Modeling', 'Python', 'Scikit-Learn', 'TensorFlow/PyTorch', 'Model Deployment'],
     duration: '3 to 6 Months',
@@ -74,7 +74,7 @@ export const INTERNSHIP_TRACKS: InternshipTrack[] = [
     tagline: 'Frontend & backend modern architecture',
     description: 'Build responsive, scalable, modern web applications from scratch using React 19, TypeScript, Next.js, Node.js, Express, and cloud databases with industry code reviews.',
     icon: 'language',
-    badgeColor: 'from-cyan-600 to-blue-700',
+    badgeColor: 'from-[#cc0000] to-[#001f5c]',
     popular: true,
     skills: ['React', 'TypeScript', 'Node.js', 'Next.js', 'Express', 'Tailwind CSS', 'PostgreSQL/MongoDB', 'REST & GraphQL'],
     duration: '3 to 6 Months',
@@ -98,7 +98,7 @@ export const INTERNSHIP_TRACKS: InternshipTrack[] = [
     tagline: 'iOS & Android native and hybrid apps',
     description: 'Create engaging, high-performance mobile experiences for both iOS and Android platforms using Flutter, Dart, React Native, Firebase backend, and offline-first state architecture.',
     icon: 'smartphone',
-    badgeColor: 'from-blue-700 to-slate-900',
+    badgeColor: 'from-[#00113a] to-[#cc0000]',
     skills: ['Flutter', 'React Native', 'Dart', 'iOS & Android SDKs', 'State Management (Bloc/Redux)', 'Firebase', 'REST APIs', 'Play Store Deployment'],
     duration: '3 to 6 Months',
     stipend: '₹8,000 - ₹15,000 / mo Performance-based',
@@ -121,7 +121,7 @@ export const INTERNSHIP_TRACKS: InternshipTrack[] = [
     tagline: 'QA & Automation excellence',
     description: 'Ensure software quality and zero-defect reliability through thorough manual testing methodologies, automated test scripts (Selenium, Cypress, Playwright), API validation, and performance tests.',
     icon: 'bug_report',
-    badgeColor: 'from-amber-600 to-orange-700',
+    badgeColor: 'from-[#cc0000] to-[#00113a]',
     skills: ['Selenium', 'Cypress', 'Playwright', 'Manual Testing', 'API Testing (Postman)', 'Bug Tracking (Jira)', 'Test Plan Strategy', 'CI/CD QA Integration'],
     duration: '3 to 6 Months',
     stipend: '₹7,000 - ₹14,000 / mo Performance-based',
@@ -144,7 +144,7 @@ export const INTERNSHIP_TRACKS: InternshipTrack[] = [
     tagline: 'SEO, SEM, social media & growth',
     description: 'Drive exponential growth and brand authority through Search Engine Optimization (SEO), Paid Ads (Google & Meta Ads), social media strategy, content marketing, and conversion funnels.',
     icon: 'campaign',
-    badgeColor: 'from-orange-500 to-rose-600',
+    badgeColor: 'from-[#001f5c] to-[#cc0000]',
     skills: ['SEO / SEM', 'Google Ads', 'Meta Ads Manager', 'Social Media Strategy', 'Content Marketing', 'Google Analytics 4', 'Email Automation', 'Conversion Rate Optimization'],
     duration: '3 to 6 Months',
     stipend: '₹7,000 - ₹14,000 / mo Performance-based',

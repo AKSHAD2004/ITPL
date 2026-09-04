@@ -34,7 +34,7 @@ export const LifeAtCompany: React.FC = () => {
             <span>Culture & Environment</span>
           </div>
           <h2 className="font-heading font-extrabold text-[28px] sm:text-[36px] text-[#00113a] tracking-tight">
-            Life at Infoyashonand
+            Life at INFOYASHONAND
           </h2>
           <p className="text-[15px] sm:text-[17px] text-[#444650] mt-3 max-w-2xl mx-auto">
             We don't believe in boring busywork. We nurture aspiring software developers, data practitioners, and marketers into confident industry leaders.
