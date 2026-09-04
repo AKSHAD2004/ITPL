@@ -45,8 +45,8 @@ export const TracksGrid: React.FC<TracksGridProps> = ({
             return (
               <div
                 key={track.id}
-                style={{ animationDelay: `${idx * 120}ms` }}
-                className="relative overflow-hidden w-full group bg-gradient-to-br from-[#00113a] via-[#001f5c] to-[#00113a] rounded-3xl p-6 sm:p-7 shadow-[0_10px_30px_rgba(0,17,58,0.25)] hover:shadow-[0_22px_50px_rgba(0,17,58,0.55)] border border-white/15 hover:border-amber-400/70 hover:-translate-y-2.5 hover:scale-[1.015] active:scale-[0.98] transition-all duration-500 ease-out flex flex-col justify-between text-white cursor-pointer animate-in fade-in slide-in-from-bottom-8"
+                style={{ animationDelay: `${idx * 140}ms` }}
+                className="relative overflow-hidden w-full group bg-gradient-to-br from-[#00113a] via-[#001f5c] to-[#00113a] rounded-3xl p-6 sm:p-7 shadow-[0_10px_30px_rgba(0,17,58,0.25)] hover:shadow-[0_22px_50px_rgba(0,17,58,0.55)] border border-white/15 hover:border-amber-400/70 hover:-translate-y-2.5 hover:scale-[1.015] active:scale-[0.98] transition-all duration-500 ease-out flex flex-col justify-between text-white cursor-pointer animate-in fade-in slide-in-from-left-12 md:slide-in-from-bottom-8"
               >
                 {/* Subtle Light Sheen Reflection Effect */}
                 <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000 ease-in-out pointer-events-none" />
