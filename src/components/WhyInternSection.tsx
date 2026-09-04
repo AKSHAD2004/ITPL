@@ -137,7 +137,7 @@ export const WhyInternSection: React.FC = () => {
             statsReveal.isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
           }`}
         >
-          <div className="bg-[#282E83] text-white rounded-3xl p-8 sm:p-12 shadow-xl overflow-hidden relative">
+          <div className="bg-[#1b2685] text-white rounded-3xl p-8 sm:p-12 shadow-xl overflow-hidden relative">
             {/* Red accent glow */}
             <div className="absolute top-0 left-1/2 -translate-x-1/2 w-64 h-1 bg-gradient-to-r from-transparent via-[#cc0000] to-transparent" />
             <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 text-center divide-y sm:divide-y-0 sm:divide-x divide-white/10">

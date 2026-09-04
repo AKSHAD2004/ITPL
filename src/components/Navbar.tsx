@@ -63,32 +63,18 @@ export const Navbar: React.FC<NavbarProps> = ({
       </div>
 
       {/* Main Navbar */}
-      <div className="bg-[#282E83] border-b border-white/10 shadow-[0_4px_25px_rgba(0,17,58,0.5)]">
-        <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between gap-4">
-        {/* Brand Logo & Name matching official banner */}
+      <div className="bg-[#1b2685] border-b border-white/10 shadow-[0_4px_25px_rgba(0,17,58,0.5)]">
+        <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8 h-20 sm:h-22 flex items-center justify-between gap-4">
+        {/* Brand Logo & Name Banner */}
         <div 
           onClick={() => handleNavClick('home')}
-          className="flex items-center cursor-pointer group min-w-0 shrink"
+          className="flex items-center cursor-pointer group min-w-0 shrink py-1"
         >
-          <div className="relative w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-white border border-white/20 p-0.5 flex items-center justify-center shadow-md group-hover:scale-105 transition-transform shrink-0 overflow-hidden">
-            <img 
-              src={LOGO_URL} 
-              alt="Infoyashonand Technology Logo" 
-              className="w-full h-full object-cover rounded-full"
-            />
-          </div>
-
-          {/* Vertical Divider Line */}
-          <div className="w-[2px] h-8 sm:h-10 bg-white/40 mx-2.5 sm:mx-3 shrink-0" />
-
-          <div className="flex flex-col min-w-0 justify-center">
-            <span className="font-heading font-black text-[17px] sm:text-[22px] leading-none text-white tracking-[0.05em] group-hover:text-amber-300 transition-colors truncate uppercase">
-              INFOYASHONAND
-            </span>
-            <span className="font-heading font-extrabold text-[10px] sm:text-[13px] leading-tight text-slate-200 tracking-[0.06em] uppercase truncate mt-0.5">
-              TECHNOLOGY PVT. LTD.
-            </span>
-          </div>
+          <img 
+            src="/assets/navbar_banner.png" 
+            alt="INFOYASHONAND TECHNOLOGY PVT. LTD." 
+            className="h-12 sm:h-14 md:h-16 lg:h-17 w-auto max-w-[280px] sm:max-w-[380px] md:max-w-[480px] object-contain transition-transform group-hover:scale-[1.02]"
+          />
         </div>
 
         {/* Desktop Navigation Links (Hidden on mobile) */}

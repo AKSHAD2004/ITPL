@@ -36,7 +36,7 @@ export const LifeAtCompany: React.FC = () => {
           </div>
           <h2 className="font-heading font-extrabold text-[28px] sm:text-[38px] text-[#00113a] tracking-tight flex flex-col items-center justify-center gap-2">
             <span>Life at</span>
-            <span className="inline-flex items-center gap-2.5 px-5 py-1.5 rounded-xl bg-[#282E83] text-white shadow-md tracking-wider">
+            <span className="inline-flex items-center gap-2.5 px-5 py-1.5 rounded-xl bg-[#1b2685] text-white shadow-md tracking-wider">
               <span className="relative w-7 h-7 sm:w-8 sm:h-8 rounded-full bg-white border border-white/30 p-0.5 inline-flex items-center justify-center shadow-sm overflow-hidden shrink-0">
                 <img 
                   src={LOGO_URL} 
