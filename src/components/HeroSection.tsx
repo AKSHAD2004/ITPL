@@ -13,7 +13,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
   onExploreRoles
 }) => {
   return (
-    <section className="relative w-full overflow-hidden bg-[#00113a] text-white pt-28 sm:pt-36 pb-16 sm:pb-24 min-h-[100dvh] flex items-center justify-center">
+    <section className="relative w-full overflow-hidden bg-[#00113a] text-white pt-36 sm:pt-44 lg:pt-48 pb-16 sm:pb-24 min-h-[100dvh] flex items-center justify-center">
       
       {/* Full Background Image Layer - Responsive alignment for mobile & desktop */}
       <div 

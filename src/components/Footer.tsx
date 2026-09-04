@@ -133,7 +133,7 @@ export const Footer: React.FC<FooterProps> = ({
             </h4>
             <div className="flex items-start gap-2.5">
               <MapPin className="w-4 h-4 text-emerald-400 shrink-0 mt-0.5" />
-              <span>Infoyashonand Technology Pvt. Ltd., 1st Floor, Pearl Enclave, M.S.E.B. Road, Vishrambag, Sangli, Maharashtra 416416</span>
+              <span>INFOYASHONAND TECHNOLOGY PVT. LTD., 1st Floor, Pearl Enclave, M.S.E.B. Road, Vishrambag, Sangli, Maharashtra 416416</span>
             </div>
             <div className="flex items-center gap-2.5">
               <Phone className="w-4 h-4 text-amber-300 shrink-0" />
@@ -160,7 +160,7 @@ export const Footer: React.FC<FooterProps> = ({
 
         {/* Footer Bottom Bar */}
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-[12px] text-[#b3c5ff]/80">
-          <p>© {new Date().getFullYear()} Infoyashonand Technology Pvt. Ltd. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} INFOYASHONAND TECHNOLOGY PVT. LTD. All rights reserved.</p>
           <div className="flex items-center gap-4">
             <span>Innovate • Develop • Grow</span>
             <button

@@ -7,7 +7,7 @@ export const HERO_IMAGE_URL = "/assets/hero_banner.jpg";
 export const CONTACT_PHONE = "9022508448";
 export const CONTACT_EMAIL = "contact@infoyashonand.com";
 export const COMPANY_WEBSITE = "www.infoyashonand.com";
-export const COMPANY_NAME = "Infoyashonand Technology Pvt. Ltd.";
+export const COMPANY_NAME = "INFOYASHONAND TECHNOLOGY PVT. LTD.";
 export const TAGLINE = "INNOVATE • DEVELOP • GROW";
 
 export const getWhatsAppLink = (trackTitle?: string) => {

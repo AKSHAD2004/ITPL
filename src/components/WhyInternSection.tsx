@@ -38,7 +38,7 @@ export const WhyInternSection: React.FC = () => {
   ];
 
   const stats = [
-    { value: '5,000+', label: 'Students Placed & Mentored' },
+    { value: '200+', label: 'Students Placed & Mentored' },
     { value: '98%', label: 'Placement Success Rate' },
     { value: '80+', label: 'Corporate Hiring Partners' },
     { value: '100%', label: 'Hands-On Practical Code' }
@@ -69,31 +69,36 @@ export const WhyInternSection: React.FC = () => {
             return (
               <div
                 key={idx}
-                className="bg-[#f8f9fa] rounded-3xl p-7 border border-[#c5c6d2]/30 hover:border-[#0059bb]/50 hover:bg-white hover:shadow-[0_16px_36px_rgba(0,17,58,0.08)] transition-all duration-300 flex flex-col justify-between group"
+                style={{ animationDelay: `${idx * 150}ms` }}
+                className="relative overflow-hidden bg-[#f8f9fa] rounded-3xl p-7 border border-[#c5c6d2]/30 hover:border-[#0059bb]/60 hover:bg-white hover:shadow-[0_20px_45px_rgba(0,89,187,0.15)] hover:-translate-y-2 hover:scale-[1.02] active:scale-[0.98] transition-all duration-500 ease-out flex flex-col justify-between group cursor-pointer animate-in fade-in slide-in-from-bottom-6"
               >
+                {/* Subtle Sheen Highlight Effect */}
+                <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/40 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000 ease-in-out pointer-events-none" />
+
                 <div>
-                  <div className="w-14 h-14 rounded-2xl bg-[#00113a] text-white flex items-center justify-center mb-6 shadow-md group-hover:scale-110 group-hover:bg-[#0059bb] transition-all duration-300">
-                    <Icon className="w-7 h-7 text-[#b3c5ff]" />
+                  {/* Animated Icon Box */}
+                  <div className="w-14 h-14 rounded-2xl bg-[#00113a] text-white flex items-center justify-center mb-6 shadow-md group-hover:scale-110 group-hover:rotate-6 group-hover:bg-gradient-to-tr from-[#0059bb] to-amber-500 group-hover:shadow-[0_8px_20px_rgba(0,89,187,0.35)] transition-all duration-500">
+                    <Icon className="w-7 h-7 text-[#b3c5ff] group-hover:text-white transition-colors duration-300" />
                   </div>
 
-                  <span className="text-[11px] font-bold uppercase tracking-wider text-[#0059bb] block mb-1">
+                  <span className="text-[11px] font-bold uppercase tracking-wider text-[#0059bb] block mb-1 group-hover:translate-x-1 transition-transform duration-300">
                     {item.highlight}
                   </span>
 
-                  <h3 className="font-heading font-extrabold text-[20px] text-[#00113a] mb-3 group-hover:text-[#0059bb] transition-colors">
+                  <h3 className="font-heading font-extrabold text-[20px] text-[#00113a] mb-3 group-hover:text-[#0059bb] transition-colors duration-300">
                     {item.title}
                   </h3>
 
-                  <p className="text-[14px] text-[#444650] leading-relaxed">
+                  <p className="text-[14px] text-[#444650] leading-relaxed group-hover:text-[#191c1d] transition-colors duration-300">
                     {item.desc}
                   </p>
                 </div>
 
                 <div className="mt-8 pt-4 border-t border-slate-200/80 flex items-center justify-between">
-                  <span className="font-heading font-black text-[22px] text-[#00113a]">
+                  <span className="font-heading font-black text-[22px] text-[#00113a] group-hover:text-[#0059bb] group-hover:scale-105 transition-all duration-300 inline-block">
                     {item.metric}
                   </span>
-                  <span className="text-[11px] font-semibold text-[#757682] uppercase text-right">
+                  <span className="text-[11px] font-semibold text-[#757682] uppercase text-right group-hover:text-[#00113a] transition-colors duration-300">
                     {item.metricLabel}
                   </span>
                 </div>
