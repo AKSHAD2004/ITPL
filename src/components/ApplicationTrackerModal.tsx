@@ -48,14 +48,14 @@ export const ApplicationTrackerModal: React.FC<ApplicationTrackerModalProps> = (
         if (query.includes('test') || query.includes('inf') || query.includes(CONTACT_PHONE)) {
           setFoundApplication({
             id: 'sample_1',
-            trackingNumber: 'INF-2025-84920',
+            trackingNumber: 'INF-2026-84920',
             fullName: 'Aarav Kulkarni',
             email: 'aarav.kulkarni@example.com',
             phone: CONTACT_PHONE,
             trackId: 'data-analyst',
             trackTitle: 'Data Analyst',
             education: 'B.E. Computer Science',
-            graduationYear: '2025',
+            graduationYear: '2026',
             collegeName: 'Pune Institute of Computer Technology',
             city: 'Pune',
             experienceLevel: 'Student',

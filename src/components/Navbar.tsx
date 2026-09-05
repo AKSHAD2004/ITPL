@@ -31,7 +31,7 @@ export const Navbar: React.FC<NavbarProps> = ({
     <div className="flex items-center gap-8 px-4 shrink-0">
       <span className="flex items-center gap-2">
         <span className="text-amber-400">🚀</span>
-        <strong className="text-amber-300">Next Internship Batch 2025:</strong> Admissions Open! Limited Seats Available.
+        <strong className="text-amber-300">Next Internship Batch 2026:</strong> Admissions Open! Limited Seats Available.
       </span>
       <span className="text-white/30">•</span>
       <span className="flex items-center gap-2">
