@@ -38,11 +38,12 @@ export const LifeAtCompany: React.FC = () => {
             <span>Life at</span>
             <div className="inline-flex items-center gap-3.5 sm:gap-5 md:gap-6 px-6 sm:px-8 md:px-10 py-3.5 sm:py-4.5 md:py-5 rounded-2xl sm:rounded-3xl bg-[#1b2685] text-white shadow-2xl border border-white/15 select-none hover:scale-[1.02] transition-transform duration-200">
               {/* Circular Logo Emblem */}
-              <div className="relative w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 rounded-full bg-white border-2 border-white/30 p-0.5 sm:p-1 flex items-center justify-center shadow-md shrink-0 overflow-hidden">
+              <div className="relative w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 flex items-center justify-center shrink-0">
                 <img 
                   src={LOGO_URL} 
                   alt="INFOYASHONAND Logo" 
-                  className="w-full h-full object-cover rounded-full"
+                  className="w-full h-full object-contain"
+                  style={{ clipPath: 'inset(0 3.5% 0 0)' }}
                 />
               </div>
 

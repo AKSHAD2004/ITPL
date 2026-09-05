@@ -1,6 +1,6 @@
 import { InternshipTrack, Testimonial, FAQItem } from '../types';
 
-export const LOGO_URL = "/assets/logo.jpg";
+export const LOGO_URL = "/assets/nav_logo.png";
 
 export const HERO_IMAGE_URL = "/assets/hero_banner.jpg";
 

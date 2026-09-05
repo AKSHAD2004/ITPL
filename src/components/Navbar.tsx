@@ -70,17 +70,19 @@ export const Navbar: React.FC<NavbarProps> = ({
           onClick={() => handleNavClick('home')}
           className="flex items-center justify-center lg:justify-start gap-2.5 min-[380px]:gap-3.5 sm:gap-4 cursor-pointer group min-w-0 select-none w-full lg:w-auto"
         >
-          {/* Circular Logo Emblem on Left */}
-          <div className="relative w-12 h-12 min-[380px]:w-14 min-[380px]:h-14 sm:w-14 sm:h-14 md:w-15 md:h-15 rounded-full bg-white border border-white/20 p-0.5 flex items-center justify-center shadow-md group-hover:scale-105 transition-transform duration-200 shrink-0 overflow-hidden">
-            <img 
-              src={LOGO_URL} 
-              alt="INFOYASHONAND Logo" 
-              className="w-full h-full object-cover rounded-full"
-            />
+          {/* Clean Circular Logo Emblem */}
+          <div className="relative w-13 h-13 min-[380px]:w-15 min-[380px]:h-15 sm:w-16 sm:h-16 md:w-18 md:h-18 flex items-center justify-center group-hover:scale-105 transition-transform duration-200 shrink-0">
+            <div className="w-full h-full rounded-full overflow-hidden flex items-center justify-center">
+              <img 
+                src={LOGO_URL} 
+                alt="INFOYASHONAND Logo" 
+                className="w-full h-full object-cover scale-[1.2] -translate-x-[4%]"
+              />
+            </div>
           </div>
 
-          {/* Thin Vertical White Divider */}
-          <div className="w-[1.5px] sm:w-[2px] h-10 min-[380px]:h-12 sm:h-12 md:h-13 bg-white/90 shrink-0" />
+          {/* Vertical White Divider with Visible Spacing */}
+          <div className="w-[2px] sm:w-[2.5px] h-9 min-[380px]:h-10 sm:h-11 md:h-12 bg-white/90 rounded-full shrink-0 shadow-xs mx-0.5 sm:mx-1" />
 
           {/* Two-line exact company name perfectly aligned edge-to-edge matching reference */}
           <div className="flex items-center min-w-0">
