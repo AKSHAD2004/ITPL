@@ -36,25 +36,26 @@ export const LifeAtCompany: React.FC = () => {
           </div>
           <h2 className="font-heading font-extrabold text-[28px] sm:text-[38px] text-[#00113a] tracking-tight flex flex-col items-center justify-center gap-3 sm:gap-4">
             <span>Life at</span>
-            <div className="inline-flex items-center gap-3.5 sm:gap-5 md:gap-6 px-6 sm:px-8 md:px-10 py-3.5 sm:py-4.5 md:py-5 rounded-2xl sm:rounded-3xl bg-[#1b2685] text-white shadow-2xl border border-white/15 select-none hover:scale-[1.02] transition-transform duration-200">
-              {/* Circular Logo Emblem */}
-              <div className="relative w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 flex items-center justify-center shrink-0">
-                <img 
-                  src={LOGO_URL} 
-                  alt="INFOYASHONAND Logo" 
-                  className="w-full h-full object-contain"
-                  style={{ clipPath: 'inset(0 3.5% 0 0)' }}
-                />
+            <div className="inline-flex items-center gap-3 sm:gap-4 md:gap-5 px-6 sm:px-8 md:px-10 py-3.5 sm:py-4.5 md:py-5 rounded-2xl sm:rounded-3xl bg-[#1b2685] text-white shadow-2xl border border-white/15 select-none hover:scale-[1.02] transition-transform duration-200">
+              {/* Clean Circular Logo Emblem */}
+              <div className="relative w-12 h-12 sm:w-16 sm:h-16 md:w-18 md:h-18 flex items-center justify-center shrink-0">
+                <div className="w-full h-full rounded-full overflow-hidden flex items-center justify-center">
+                  <img 
+                    src={LOGO_URL} 
+                    alt="INFOYASHONAND Logo" 
+                    className="w-full h-full object-cover scale-[1.2] -translate-x-[4%]"
+                  />
+                </div>
               </div>
 
-              {/* Thin Vertical White Divider */}
-              <div className="w-[2px] sm:w-[2.5px] md:w-[3px] h-10 sm:h-14 md:h-18 bg-white/90 shrink-0" />
+              {/* Vertical White Divider with Visible Spacing */}
+              <div className="w-[2.5px] sm:w-[3px] h-10 sm:h-13 md:h-15 bg-white/90 rounded-full shrink-0 shadow-xs mx-0.5 sm:mx-1" />
 
-              {/* Two-line company name perfectly aligned edge-to-edge matching reference */}
+              {/* Two-line exact company name perfectly aligned edge-to-edge matching navbar */}
               <div className="flex items-center min-w-0">
                 <svg 
                   viewBox="0 0 670 170" 
-                  className="w-auto h-[40px] sm:h-[56px] md:h-[68px] shrink-0 select-none"
+                  className="w-auto h-[38px] sm:h-[52px] md:h-[62px] shrink-0 select-none"
                   style={{ overflow: 'visible' }}
                 >
                   <text 
@@ -72,7 +73,7 @@ export const LifeAtCompany: React.FC = () => {
                   <text 
                     x="0" 
                     y="162" 
-                    fill="rgba(255, 255, 255, 0.95)"
+                    fill="#ffffff"
                     fontFamily="'Oswald', sans-serif" 
                     fontWeight="700" 
                     fontSize="64"

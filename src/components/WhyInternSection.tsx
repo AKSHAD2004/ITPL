@@ -140,13 +140,22 @@ export const WhyInternSection: React.FC = () => {
           <div className="bg-[#1b2685] text-white rounded-3xl p-8 sm:p-12 shadow-xl overflow-hidden relative">
             {/* Red accent glow */}
             <div className="absolute top-0 left-1/2 -translate-x-1/2 w-64 h-1 bg-gradient-to-r from-transparent via-[#cc0000] to-transparent" />
-            <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 text-center divide-y sm:divide-y-0 sm:divide-x divide-white/10">
+            <div className="grid grid-cols-2 lg:grid-cols-4 gap-y-6 sm:gap-y-8 text-center">
               {stats.map((st, sIdx) => (
-                <div key={sIdx} className={`space-y-1.5 group ${sIdx !== 0 ? 'pt-4 sm:pt-0' : ''}`}>
+                <div 
+                  key={sIdx} 
+                  className={`flex flex-col items-center justify-start text-center space-y-2 group py-2 sm:py-3 px-3 ${
+                    sIdx >= 2 ? 'border-t border-white/10 lg:border-t-0' : ''
+                  } ${
+                    sIdx % 2 === 0 ? 'border-r border-white/10 lg:border-r-0' : ''
+                  } ${
+                    sIdx > 0 ? 'lg:border-l lg:border-white/10' : ''
+                  }`}
+                >
                   <div className="font-heading font-black text-[32px] sm:text-[42px] lg:text-[46px] text-amber-300 group-hover:text-[#ff6666] tracking-tight leading-none transition-colors duration-300">
                     {st.value}
                   </div>
-                  <div className="text-[13px] sm:text-[14px] font-medium text-[#b3c5ff]">
+                  <div className="text-[13px] sm:text-[14px] font-medium text-[#b3c5ff] leading-snug">
                     {st.label}
                   </div>
                 </div>

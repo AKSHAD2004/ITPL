@@ -100,14 +100,6 @@ export const Footer: React.FC<FooterProps> = ({
             </h4>
             <ul className="space-y-2 text-[13px] text-[#b3c5ff]">
               <li>
-                <button
-                  onClick={onOpenApply}
-                  className="hover:text-white transition-colors"
-                >
-                  Apply for Internship
-                </button>
-              </li>
-              <li>
                 <a
                   href="#why-us"
                   className="hover:text-white transition-colors"
