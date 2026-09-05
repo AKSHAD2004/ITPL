@@ -18,7 +18,10 @@ export const TrackDetailModal: React.FC<TrackDetailModalProps> = ({
   if (!track) return null;
 
   return (
-    <div className="fixed inset-0 z-50 overflow-y-auto bg-[#00113a]/80 backdrop-blur-md flex items-center justify-center p-3 sm:p-6 animate-in fade-in duration-200">
+    <div 
+      onClick={onClose}
+      className="fixed inset-0 z-50 overflow-y-auto bg-[#00113a]/80 backdrop-blur-md flex items-center justify-center p-3 sm:p-6 animate-in fade-in duration-200 cursor-pointer"
+    >
       <div 
         className="relative bg-gradient-to-br from-[#00113a] via-[#001f5c] to-[#00113a] text-white w-full max-w-3xl rounded-3xl shadow-2xl border border-white/20 overflow-hidden max-h-[92vh] flex flex-col my-auto animate-in zoom-in-95 duration-200"
         onClick={(e) => e.stopPropagation()}
@@ -27,10 +30,10 @@ export const TrackDetailModal: React.FC<TrackDetailModalProps> = ({
         <div className="relative bg-white/10 text-white p-6 sm:p-8 shrink-0 border-b border-white/15 backdrop-blur-md">
           <button
             onClick={onClose}
-            className="absolute top-5 right-5 w-9 h-9 rounded-full bg-white/15 hover:bg-white/25 text-white flex items-center justify-center transition-colors cursor-pointer border border-white/20"
+            className="absolute top-5 right-5 w-9 h-9 rounded-full bg-red-500 hover:bg-red-600 text-white flex items-center justify-center transition-all cursor-pointer shadow-md hover:scale-105 border border-red-400/30"
             aria-label="Close"
           >
-            <X className="w-5 h-5" />
+            <X className="w-5 h-5 stroke-[2.5]" />
           </button>
 
           <div className="flex items-center gap-4">
@@ -41,11 +44,6 @@ export const TrackDetailModal: React.FC<TrackDetailModalProps> = ({
             </div>
 
             <div>
-              <div className="flex flex-wrap items-center gap-2 mb-1.5">
-                <span className="px-3 py-0.5 rounded-full text-[11px] font-bold uppercase tracking-wider bg-gradient-to-r from-amber-400 to-yellow-400 text-[#00113a] font-heading shadow-xs">
-                  Official Track
-                </span>
-              </div>
               <h2 className="font-heading font-extrabold text-[24px] sm:text-[28px] text-white leading-tight uppercase tracking-tight">
                 {track.title}
               </h2>
@@ -163,25 +161,19 @@ export const TrackDetailModal: React.FC<TrackDetailModalProps> = ({
         </div>
 
         {/* Modal Footer */}
-        <div className="p-4 sm:p-6 bg-white/10 border-t border-white/15 backdrop-blur-md flex items-center justify-end gap-3 shrink-0">
+        <div className="p-4 sm:p-6 bg-white/10 border-t border-white/15 backdrop-blur-md shrink-0">
+          <a
+            href={getWhatsAppLink(track.title)}
+            target="_blank"
+            rel="noreferrer"
+            className="relative overflow-hidden w-full bg-gradient-to-r from-emerald-500 via-green-500 to-emerald-600 hover:from-emerald-600 hover:to-green-600 text-white text-[14px] sm:text-[15px] font-extrabold px-6 py-3.5 rounded-full transition-all flex items-center justify-center gap-2.5 whitespace-nowrap cursor-pointer animate-btn-glow group select-none hover:scale-[1.02] active:scale-98"
+          >
+            {/* Shimmer Light Beam */}
+            <span className="absolute inset-0 w-1/2 h-full bg-gradient-to-r from-transparent via-white/30 to-transparent -skew-x-12 animate-shimmer pointer-events-none" />
 
-          <div className="flex items-center gap-3 w-full sm:w-auto">
-            <button
-              onClick={onClose}
-              className="w-1/2 sm:w-auto px-5 py-2.5 rounded-full text-[13px] font-bold text-white bg-white/10 hover:bg-white/20 border border-white/20 transition-colors"
-            >
-              Close
-            </button>
-            <a
-              href={getWhatsAppLink(track.title)}
-              target="_blank"
-              rel="noreferrer"
-              className="w-1/2 sm:w-auto bg-gradient-to-r from-emerald-500 via-green-500 to-emerald-600 hover:from-emerald-600 hover:to-green-600 text-white text-[13px] sm:text-[14px] font-extrabold px-6 sm:px-7 py-2.5 rounded-full shadow-md hover:shadow-lg transition-all flex items-center justify-center gap-2 whitespace-nowrap cursor-pointer"
-            >
-              <WhatsappIcon className="w-4 h-4 text-white shrink-0" />
-              <span>WhatsApp Inquiry</span>
-            </a>
-          </div>
+            <WhatsappIcon className="w-5 h-5 text-white shrink-0 animate-icon-wiggle drop-shadow-sm" />
+            <span className="tracking-wide">WhatsApp Inquiry</span>
+          </a>
         </div>
 
       </div>

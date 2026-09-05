@@ -123,9 +123,10 @@ export const ApplyModal: React.FC<ApplyModalProps> = ({
         <div className="bg-gradient-to-r from-blue-50/90 via-slate-50 to-amber-50/70 text-[#00113a] p-6 sm:p-7 shrink-0 relative border-b border-slate-200/80">
           <button
             onClick={onClose}
-            className="absolute top-5 right-5 w-9 h-9 rounded-full bg-slate-200/70 hover:bg-slate-300 text-[#00113a] flex items-center justify-center transition-colors cursor-pointer"
+            className="absolute top-5 right-5 w-9 h-9 rounded-full bg-red-500 hover:bg-red-600 text-white flex items-center justify-center transition-all cursor-pointer shadow-md hover:scale-105 border border-red-400/30"
+            aria-label="Close"
           >
-            <X className="w-5 h-5" />
+            <X className="w-5 h-5 stroke-[2.5]" />
           </button>
 
           <div className="flex items-center gap-2 text-[#0059bb] text-[12px] font-bold uppercase tracking-widest font-heading mb-1">

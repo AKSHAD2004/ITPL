@@ -34,18 +34,55 @@ export const LifeAtCompany: React.FC = () => {
             <Sparkles className="w-3.5 h-3.5" />
             <span>Culture & Environment</span>
           </div>
-          <h2 className="font-heading font-extrabold text-[28px] sm:text-[38px] text-[#00113a] tracking-tight flex flex-col items-center justify-center gap-2">
+          <h2 className="font-heading font-extrabold text-[28px] sm:text-[38px] text-[#00113a] tracking-tight flex flex-col items-center justify-center gap-3 sm:gap-4">
             <span>Life at</span>
-            <span className="inline-flex items-center gap-2.5 px-5 py-1.5 rounded-xl bg-[#1b2685] text-white shadow-md tracking-wider">
-              <span className="relative w-7 h-7 sm:w-8 sm:h-8 rounded-full bg-white border border-white/30 p-0.5 inline-flex items-center justify-center shadow-sm overflow-hidden shrink-0">
+            <div className="inline-flex items-center gap-3.5 sm:gap-5 md:gap-6 px-6 sm:px-8 md:px-10 py-3.5 sm:py-4.5 md:py-5 rounded-2xl sm:rounded-3xl bg-[#1b2685] text-white shadow-2xl border border-white/15 select-none hover:scale-[1.02] transition-transform duration-200">
+              {/* Circular Logo Emblem */}
+              <div className="relative w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 rounded-full bg-white border-2 border-white/30 p-0.5 sm:p-1 flex items-center justify-center shadow-md shrink-0 overflow-hidden">
                 <img 
                   src={LOGO_URL} 
-                  alt="Infoyashonand Logo" 
+                  alt="INFOYASHONAND Logo" 
                   className="w-full h-full object-cover rounded-full"
                 />
-              </span>
-              <span>INFOYASHONAND</span>
-            </span>
+              </div>
+
+              {/* Thin Vertical White Divider */}
+              <div className="w-[2px] sm:w-[2.5px] md:w-[3px] h-10 sm:h-14 md:h-18 bg-white/90 shrink-0" />
+
+              {/* Two-line company name perfectly aligned edge-to-edge matching reference */}
+              <div className="flex items-center min-w-0">
+                <svg 
+                  viewBox="0 0 670 170" 
+                  className="w-auto h-[40px] sm:h-[56px] md:h-[68px] shrink-0 select-none"
+                  style={{ overflow: 'visible' }}
+                >
+                  <text 
+                    x="0" 
+                    y="90" 
+                    fill="#ffffff"
+                    fontFamily="'Oswald', sans-serif" 
+                    fontWeight="700" 
+                    fontSize="102"
+                    textLength="670" 
+                    lengthAdjust="spacing"
+                  >
+                    INFOYASHONAND
+                  </text>
+                  <text 
+                    x="0" 
+                    y="162" 
+                    fill="rgba(255, 255, 255, 0.95)"
+                    fontFamily="'Oswald', sans-serif" 
+                    fontWeight="700" 
+                    fontSize="64"
+                    textLength="670" 
+                    lengthAdjust="spacing"
+                  >
+                    TECHNOLOGY PVT. LTD.
+                  </text>
+                </svg>
+              </div>
+            </div>
           </h2>
           <p className="text-[15px] sm:text-[17px] text-[#444650] mt-3 max-w-2xl mx-auto">
             We don't believe in boring busywork. We nurture aspiring software developers, data practitioners, and marketers into confident industry leaders.

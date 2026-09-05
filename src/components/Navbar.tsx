@@ -65,16 +65,56 @@ export const Navbar: React.FC<NavbarProps> = ({
       {/* Main Navbar */}
       <div className="bg-[#1b2685] border-b border-white/10 shadow-[0_4px_25px_rgba(0,17,58,0.5)]">
         <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8 h-20 sm:h-22 flex items-center justify-between gap-4">
-        {/* Brand Logo & Name Banner */}
+        {/* Brand Logo & Name Matching Reference - Filling Full Navbar on Mobile */}
         <div 
           onClick={() => handleNavClick('home')}
-          className="flex items-center cursor-pointer group min-w-0 shrink py-1"
+          className="flex items-center justify-center lg:justify-start gap-2.5 min-[380px]:gap-3.5 sm:gap-4 cursor-pointer group min-w-0 select-none w-full lg:w-auto"
         >
-          <img 
-            src="/assets/navbar_banner.png" 
-            alt="INFOYASHONAND TECHNOLOGY PVT. LTD." 
-            className="h-12 sm:h-14 md:h-16 lg:h-17 w-auto max-w-[280px] sm:max-w-[380px] md:max-w-[480px] object-contain transition-transform group-hover:scale-[1.02]"
-          />
+          {/* Circular Logo Emblem on Left */}
+          <div className="relative w-12 h-12 min-[380px]:w-14 min-[380px]:h-14 sm:w-14 sm:h-14 md:w-15 md:h-15 rounded-full bg-white border border-white/20 p-0.5 flex items-center justify-center shadow-md group-hover:scale-105 transition-transform duration-200 shrink-0 overflow-hidden">
+            <img 
+              src={LOGO_URL} 
+              alt="INFOYASHONAND Logo" 
+              className="w-full h-full object-cover rounded-full"
+            />
+          </div>
+
+          {/* Thin Vertical White Divider */}
+          <div className="w-[1.5px] sm:w-[2px] h-10 min-[380px]:h-12 sm:h-12 md:h-13 bg-white/90 shrink-0" />
+
+          {/* Two-line exact company name perfectly aligned edge-to-edge matching reference */}
+          <div className="flex items-center min-w-0">
+            <svg 
+              viewBox="0 0 670 170" 
+              className="w-auto h-[34px] min-[360px]:h-[38px] min-[400px]:h-[42px] sm:h-[46px] md:h-[50px] shrink-0 select-none"
+              style={{ overflow: 'visible' }}
+            >
+              <text 
+                x="0" 
+                y="90" 
+                className="fill-white group-hover:fill-amber-300 transition-colors duration-200"
+                fontFamily="'Oswald', sans-serif" 
+                fontWeight="700" 
+                fontSize="102"
+                textLength="670" 
+                lengthAdjust="spacing"
+              >
+                INFOYASHONAND
+              </text>
+              <text 
+                x="0" 
+                y="162" 
+                className="fill-white/95"
+                fontFamily="'Oswald', sans-serif" 
+                fontWeight="700" 
+                fontSize="64"
+                textLength="670" 
+                lengthAdjust="spacing"
+              >
+                TECHNOLOGY PVT. LTD.
+              </text>
+            </svg>
+          </div>
         </div>
 
         {/* Desktop Navigation Links (Hidden on mobile) */}

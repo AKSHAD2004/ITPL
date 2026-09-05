@@ -49,26 +49,53 @@ export const MobileBottomNav: React.FC<MobileBottomNavProps> = ({
           <span className="text-[10px] font-bold">Tracks</span>
         </button>
 
-        {/* Center WhatsApp Button */}
+        {/* Center WhatsApp Button - Always Popped Up & Highly Attractive */}
         <a
           href={getWhatsAppLink()}
           target="_blank"
           rel="noreferrer"
-          className="flex flex-col items-center -mt-5 cursor-pointer"
+          className="relative flex flex-col items-center -mt-7 cursor-pointer group select-none"
         >
-          <div className="w-12 h-12 rounded-full bg-gradient-to-tr from-emerald-500 to-green-600 text-white flex items-center justify-center shadow-[0_4px_12px_rgba(37,211,102,0.5)] border-2 border-white">
-            <WhatsappIcon className="w-6 h-6 text-white" />
+          {/* Eye-catching floating chip */}
+          <span className="absolute -top-5.5 bg-gradient-to-r from-emerald-600 to-green-600 text-white text-[9px] font-black uppercase tracking-wider px-2 py-0.5 rounded-full shadow-md whitespace-nowrap animate-bounce flex items-center gap-1 z-10 border border-emerald-300/40">
+            <span className="w-1.5 h-1.5 rounded-full bg-emerald-200 animate-ping" />
+            Chat Now
+          </span>
+
+          <div className="relative">
+            {/* Pulsing radar ping wave */}
+            <span className="absolute -inset-1.5 rounded-full bg-emerald-400/50 animate-ping pointer-events-none" />
+
+            {/* Glowing blur halo */}
+            <span className="absolute -inset-2 rounded-full bg-emerald-500/40 blur-md animate-pulse pointer-events-none" />
+
+            {/* Main Button */}
+            <div className="relative w-14 h-14 rounded-full bg-gradient-to-tr from-emerald-500 via-green-500 to-emerald-600 text-white flex items-center justify-center border-[3px] border-white group-hover:scale-110 active:scale-95 transition-all duration-200 animate-whatsapp-pulse">
+              <WhatsappIcon className="w-7 h-7 text-white drop-shadow-sm" />
+
+              {/* Online pulse dot */}
+              <span className="absolute top-0 right-0 w-3.5 h-3.5 bg-emerald-400 border-2 border-white rounded-full flex items-center justify-center shadow-xs">
+                <span className="w-1.5 h-1.5 rounded-full bg-white" />
+              </span>
+            </div>
           </div>
-          <span className="text-[10px] font-extrabold text-emerald-700 mt-0.5">WhatsApp</span>
+
+          <span className="text-[10px] font-black text-emerald-700 mt-1 uppercase tracking-wider">
+            WhatsApp
+          </span>
         </a>
 
-        {/* Direct Call */}
+        {/* Direct Call - Animated Ringing */}
         <a
           href={`tel:${CONTACT_PHONE}`}
-          className="flex flex-col items-center gap-1 py-1 px-3 rounded-xl text-[#00113a] hover:text-[#0059bb] transition-colors"
+          className="flex flex-col items-center gap-1 py-1 px-3 rounded-xl text-[#00113a] hover:text-[#0059bb] transition-all group select-none relative"
         >
-          <Phone className="w-5 h-5 text-amber-600" />
-          <span className="text-[10px] font-bold">Call</span>
+          <div className="relative w-7 h-7 rounded-full bg-amber-50 flex items-center justify-center text-amber-600 group-hover:bg-amber-100 transition-colors shadow-xs">
+            {/* Subtle amber ping pulse */}
+            <span className="absolute -inset-0.5 rounded-full bg-amber-400/30 animate-ping pointer-events-none" />
+            <Phone className="w-4 h-4 text-amber-600 animate-phone-ring" />
+          </div>
+          <span className="text-[10px] font-bold text-amber-700 group-hover:text-amber-800">Call</span>
         </a>
 
       </div>

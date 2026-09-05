@@ -62,3 +62,92 @@
 .animate-marquee:hover {
   animation-play-state: paused;
 }
+
+@keyframes whatsapp-float {
+  0%, 100% {
+    transform: translateY(0) scale(1);
+    box-shadow: 0 8px 22px rgba(37, 211, 102, 0.55);
+  }
+  50% {
+    transform: translateY(-4px) scale(1.06);
+    box-shadow: 0 14px 30px rgba(37, 211, 102, 0.8);
+  }
+}
+
+.animate-whatsapp-pulse {
+  animation: whatsapp-float 2.2s ease-in-out infinite;
+}
+
+@keyframes phone-ring {
+  0%, 100% {
+    transform: rotate(0deg) scale(1);
+  }
+  10%, 30% {
+    transform: rotate(-16deg) scale(1.1);
+  }
+  20%, 40% {
+    transform: rotate(16deg) scale(1.1);
+  }
+  50% {
+    transform: rotate(0deg) scale(1);
+  }
+  60% {
+    transform: scale(1.08);
+  }
+  70% {
+    transform: scale(1);
+  }
+}
+
+.animate-phone-ring {
+  animation: phone-ring 2.4s ease-in-out infinite;
+  display: inline-block;
+  transform-origin: center;
+}
+
+@keyframes button-glow-pulse {
+  0%, 100% {
+    box-shadow: 0 4px 15px rgba(34, 197, 94, 0.4);
+    transform: scale(1);
+  }
+  50% {
+    box-shadow: 0 6px 28px rgba(34, 197, 94, 0.75);
+    transform: scale(1.02);
+  }
+}
+
+.animate-btn-glow {
+  animation: button-glow-pulse 2.2s ease-in-out infinite;
+}
+
+@keyframes shimmer {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(250%);
+  }
+}
+
+.animate-shimmer {
+  animation: shimmer 3.2s infinite;
+}
+
+@keyframes icon-bounce-gentle {
+  0%, 100% {
+    transform: scale(1) rotate(0deg);
+  }
+  20% {
+    transform: scale(1.18) rotate(-12deg);
+  }
+  40% {
+    transform: scale(1.18) rotate(12deg);
+  }
+  60% {
+    transform: scale(1);
+  }
+}
+
+.animate-icon-wiggle {
+  animation: icon-bounce-gentle 2.5s ease-in-out infinite;
+}

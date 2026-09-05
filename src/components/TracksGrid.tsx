@@ -95,19 +95,11 @@ const InteractiveTrackCard: React.FC<InteractiveTrackCardProps> = ({
 
       <div className="relative z-20 p-6 sm:p-7 flex-1 flex flex-col justify-between">
         <div>
-          {/* Header: Icon + Badges */}
+          {/* Header: Icon */}
           <div className="flex items-start justify-between gap-3 mb-5">
             {/* Icon box matching modal style */}
             <div className="w-14 h-14 rounded-2xl bg-white/10 border border-white/20 text-amber-300 flex items-center justify-center shadow-md group-hover:scale-110 group-hover:rotate-3 group-hover:bg-white/15 transition-all duration-300 shrink-0">
               <span className="material-symbols-outlined text-[30px]">{track.icon}</span>
-            </div>
-
-            <div className="flex flex-col items-end gap-1.5">
-              {track.popular && (
-                <span className="px-2.5 py-1 rounded-full text-[10px] font-extrabold uppercase tracking-wider bg-gradient-to-r from-amber-400 to-yellow-400 text-[#00113a] shadow-sm flex items-center gap-1">
-                  <Sparkles className="w-3 h-3 fill-[#00113a]" /> Official Track
-                </span>
-              )}
             </div>
           </div>
 
@@ -183,9 +175,11 @@ const InteractiveTrackCard: React.FC<InteractiveTrackCardProps> = ({
               target="_blank"
               rel="noopener noreferrer"
               onClick={(e) => e.stopPropagation()}
-              className="w-full py-2.5 px-3 rounded-xl font-heading font-bold text-[13px] sm:text-[14px] bg-emerald-600 hover:bg-emerald-500 text-white transition-all shadow-md hover:shadow-lg flex items-center justify-center gap-1.5 cursor-pointer"
+              className="relative overflow-hidden w-full py-2.5 px-3 rounded-xl font-heading font-bold text-[13px] sm:text-[14px] bg-gradient-to-r from-emerald-600 to-green-500 hover:from-emerald-500 hover:to-green-400 text-white transition-all shadow-md hover:shadow-lg flex items-center justify-center gap-1.5 cursor-pointer animate-btn-glow select-none"
             >
-              <WhatsappIcon className="w-4 h-4 fill-current" />
+              {/* Shimmer light beam */}
+              <span className="absolute inset-0 w-1/2 h-full bg-gradient-to-r from-transparent via-white/25 to-transparent -skew-x-12 animate-shimmer pointer-events-none" />
+              <WhatsappIcon className="w-4 h-4 fill-current shrink-0 animate-icon-wiggle" />
               <span>Apply</span>
             </a>
           </div>

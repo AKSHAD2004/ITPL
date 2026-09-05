@@ -95,9 +95,10 @@ export const ApplicationTrackerModal: React.FC<ApplicationTrackerModalProps> = (
         <div className="bg-gradient-to-r from-[#00113a] via-[#001f5c] to-[#002366] text-white p-6 sm:p-7 shrink-0 relative">
           <button
             onClick={onClose}
-            className="absolute top-5 right-5 w-9 h-9 rounded-full bg-white/10 hover:bg-white/20 text-white flex items-center justify-center transition-colors"
+            className="absolute top-5 right-5 w-9 h-9 rounded-full bg-red-500 hover:bg-red-600 text-white flex items-center justify-center transition-all cursor-pointer shadow-md hover:scale-105 border border-red-400/30"
+            aria-label="Close"
           >
-            <X className="w-5 h-5" />
+            <X className="w-5 h-5 stroke-[2.5]" />
           </button>
 
           <div className="flex items-center gap-2 text-amber-300 text-[12px] font-bold uppercase tracking-widest font-heading mb-1">
